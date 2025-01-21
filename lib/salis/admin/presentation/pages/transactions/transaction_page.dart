@@ -2,24 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart'; // Import for date formatting
 
 class TransactionsPage extends StatelessWidget {
+  const TransactionsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF121212), // Dark background
+      backgroundColor: const Color(0xFF121212), // Dark background
       appBar: AppBar(
-        backgroundColor: Color(0xFF1E1E2E),
+        backgroundColor: const Color(0xFF1E1E2E),
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Transactions',
           style: TextStyle(color: Colors.white),
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.search, color: Colors.white),
+            icon: const Icon(Icons.search, color: Colors.white),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.filter_list, color: Colors.white),
+            icon: const Icon(Icons.filter_list, color: Colors.white),
             onPressed: () {},
           ),
         ],
@@ -30,16 +32,16 @@ class TransactionsPage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: DataTable(
             headingRowColor:
-                MaterialStateColor.resolveWith((states) => Color(0xFF1E1E2E)),
+                WidgetStateColor.resolveWith((states) => const Color(0xFF1E1E2E)),
             dataRowColor:
-                MaterialStateColor.resolveWith((states) => Color(0xFF1E1E2E)),
-            headingTextStyle: TextStyle(
+                WidgetStateColor.resolveWith((states) => const Color(0xFF1E1E2E)),
+            headingTextStyle: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
-            dataTextStyle: TextStyle(color: Colors.white70),
+            dataTextStyle: const TextStyle(color: Colors.white70),
             columnSpacing: 20,
-            columns: [
+            columns: const [
               DataColumn(label: Text('Customer Photo & Name')),
               DataColumn(label: Text('Date')),
               DataColumn(label: Text('Amount')),
@@ -105,7 +107,7 @@ class TransactionsPage extends StatelessWidget {
                   backgroundImage:
                       NetworkImage(transaction['photo']!.toString()),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Text(transaction['name']!.toString()),
               ],
             ),
@@ -117,20 +119,20 @@ class TransactionsPage extends StatelessWidget {
           DataCell(Text(transaction['property']!.toString())),
           DataCell(
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
                 color: _getStatusColor(transaction['status']!.toString()),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
                 transaction['status']!.toString(),
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
             ),
           ),
           DataCell(
             IconButton(
-              icon: Icon(Icons.visibility, color: Colors.white),
+              icon: const Icon(Icons.visibility, color: Colors.white),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -164,14 +166,13 @@ class TransactionsPage extends StatelessWidget {
 class TransactionDetailsPage extends StatelessWidget {
   final Map<String, dynamic> transaction;
 
-  const TransactionDetailsPage({Key? key, required this.transaction})
-      : super(key: key);
+  const TransactionDetailsPage({super.key, required this.transaction});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transaction Details'),
+        title: const Text('Transaction Details'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

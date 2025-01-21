@@ -58,7 +58,7 @@ class _MyProductCardState extends State<MyProductCard> {
 
                       //INSTALLMENTATAL PAYMENT
                       widget.property.installmentPlan == null
-                          ? CircularProgressIndicator()
+                          ? const CircularProgressIndicator()
                           : Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -89,7 +89,7 @@ class _MyProductCardState extends State<MyProductCard> {
                                       size: 15,
                                       weight: 4,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 5,
                                     ),
                                     Text(
@@ -102,17 +102,17 @@ class _MyProductCardState extends State<MyProductCard> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.show_chart,
                                       size: 15,
                                       weight: 4,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 5,
                                     ),
                                     Text(
                                       "Payment: ${(widget.property.price - widget.property.installmentPlan!.initialPayment.toDouble()).round()}",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontWeight: FontWeight.normal,
                                       ),
                                     ),

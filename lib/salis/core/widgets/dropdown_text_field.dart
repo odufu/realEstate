@@ -42,7 +42,7 @@ class DropdownTextField extends StatelessWidget {
                       .copyWith(fontSize: 12),
                   prefixIcon: leadingIcon,
                   contentPadding:
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 12),
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),

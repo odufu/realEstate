@@ -14,6 +14,8 @@ import '../widgets/property_card.dart';
 import '../widgets/property_summary_card.dart';
 
 class PropertyManagementPage extends StatefulWidget {
+  const PropertyManagementPage({super.key});
+
   @override
   _PropertyManagementPageState createState() => _PropertyManagementPageState();
 }
@@ -123,12 +125,10 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
 
   Future<void> _pickImages() async {
     final pickedFiles = await _picker.pickMultiImage();
-    if (pickedFiles != null) {
-      setState(() {
-        _images = pickedFiles.map((file) => File(file.path)).toList();
-      });
+    setState(() {
+      _images = pickedFiles.map((file) => File(file.path)).toList();
+    });
     }
-  }
 
   Future<void> _pickVideo() async {
     final pickedFile = await _picker.pickVideo(source: ImageSource.gallery);
@@ -153,32 +153,32 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                 children: [
                   TextFormField(
                     controller: _titleController,
-                    decoration: InputDecoration(labelText: 'Title'),
+                    decoration: const InputDecoration(labelText: 'Title'),
                     validator: (value) =>
                         value!.isEmpty ? 'Please enter a title' : null,
                   ),
                   TextFormField(
                     controller: _detailsController,
-                    decoration: InputDecoration(labelText: 'Details'),
+                    decoration: const InputDecoration(labelText: 'Details'),
                     validator: (value) =>
                         value!.isEmpty ? 'Please enter details' : null,
                   ),
                   TextFormField(
                     controller: _priceController,
-                    decoration: InputDecoration(labelText: 'Price'),
+                    decoration: const InputDecoration(labelText: 'Price'),
                     keyboardType: TextInputType.number,
                     validator: (value) =>
                         value!.isEmpty ? 'Please enter a price' : null,
                   ),
                   TextFormField(
                     controller: _addressController,
-                    decoration: InputDecoration(labelText: 'Address'),
+                    decoration: const InputDecoration(labelText: 'Address'),
                     validator: (value) =>
                         value!.isEmpty ? 'Please enter an address' : null,
                   ),
                   DropdownButtonFormField<String>(
                     value: _selectedCategory,
-                    decoration: InputDecoration(labelText: 'Category'),
+                    decoration: const InputDecoration(labelText: 'Category'),
                     items: ['Residential', 'Commercial']
                         .map((category) => DropdownMenuItem(
                             value: category, child: Text(category)))
@@ -188,21 +188,21 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                     }),
                   ),
                   SwitchListTile(
-                    title: Text('Electricity'),
+                    title: const Text('Electricity'),
                     value: _electricity,
                     onChanged: (value) => setState(() {
                       _electricity = value;
                     }),
                   ),
                   SwitchListTile(
-                    title: Text('Security'),
+                    title: const Text('Security'),
                     value: _security,
                     onChanged: (value) => setState(() {
                       _security = value;
                     }),
                   ),
                   SwitchListTile(
-                    title: Text('Water'),
+                    title: const Text('Water'),
                     value: _water,
                     onChanged: (value) => setState(() {
                       _water = value;
@@ -212,16 +212,16 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                          decoration: InputDecoration(labelText: 'Bedrooms'),
+                          decoration: const InputDecoration(labelText: 'Bedrooms'),
                           keyboardType: TextInputType.number,
                           initialValue: _bedrooms.toString(),
                           onChanged: (value) => _bedrooms = int.parse(value),
                         ),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Expanded(
                         child: TextFormField(
-                          decoration: InputDecoration(labelText: 'Bathrooms'),
+                          decoration: const InputDecoration(labelText: 'Bathrooms'),
                           keyboardType: TextInputType.number,
                           initialValue: _bathrooms.toString(),
                           onChanged: (value) => _bathrooms = int.parse(value),
@@ -231,7 +231,7 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                   ),
                   DropdownButtonFormField<String>(
                     value: _paymentPlan,
-                    decoration: InputDecoration(labelText: 'Payment Plan'),
+                    decoration: const InputDecoration(labelText: 'Payment Plan'),
                     items: ['outright', 'installment', 'coownership']
                         .map((plan) =>
                             DropdownMenuItem(value: plan, child: Text(plan)))
@@ -240,11 +240,11 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                       _paymentPlan = value!;
                     }),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ElevatedButton.icon(
                     onPressed: _pickImages,
-                    icon: Icon(Icons.image),
-                    label: Text('Upload Images'),
+                    icon: const Icon(Icons.image),
+                    label: const Text('Upload Images'),
                   ),
                   if (_images.isNotEmpty)
                     Wrap(
@@ -260,11 +260,11 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                               ))
                           .toList(),
                     ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ElevatedButton.icon(
                     onPressed: _pickVideo,
-                    icon: Icon(Icons.video_library),
-                    label: Text('Upload Video'),
+                    icon: const Icon(Icons.video_library),
+                    label: const Text('Upload Video'),
                   ),
                   if (_video != null)
                     Padding(
@@ -282,7 +282,7 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                 Navigator.pop(context);
                 _clearForm();
               },
-              child: Text('Cancel'),
+              child: const Text('Cancel'),
             ),
             ElevatedButton(
               onPressed: _addOrUpdateProperty,
@@ -301,8 +301,8 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(16),
+            const Padding(
+              padding: EdgeInsets.all(16),
               child: StatsCards(),
             ),
             Padding(
@@ -321,10 +321,10 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                           context,
                         );
                       },
-                      icon: Icon(Icons.add),
-                      label: Text('Add Property'),
+                      icon: const Icon(Icons.add),
+                      label: const Text('Add Property'),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Wrap(
                       spacing: 20,
                       runSpacing: 20,

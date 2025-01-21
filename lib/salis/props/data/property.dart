@@ -2,7 +2,6 @@ import 'cartegory.dart';
 import 'co_ownership.dart';
 import 'installment_plan.dart';
 import 'location.dart';
-import 'payment_pool.dart';
 
 class Property {
   //BASIC DETAILS

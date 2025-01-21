@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PropertyDetailsPage extends StatelessWidget {
+  const PropertyDetailsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 900;
 
     return Scaffold(
       backgroundColor:
-          Color.fromARGB(255, 231, 231, 231), // Dark theme background
+          const Color.fromARGB(255, 231, 231, 231), // Dark theme background
       appBar: AppBar(
-        backgroundColor: Color(0xFF23253A),
-        title: Text('Property Overview'),
+        backgroundColor: const Color(0xFF23253A),
+        title: const Text('Property Overview'),
         actions: [
-          IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
-          CircleAvatar(backgroundImage: AssetImage('assets/profile.png')),
+          IconButton(icon: const Icon(Icons.notifications), onPressed: () {}),
+          const CircleAvatar(backgroundImage: AssetImage('assets/profile.png')),
         ],
       ),
       body: SingleChildScrollView(
@@ -33,12 +35,12 @@ class PropertyDetailsPage extends StatelessWidget {
                           child: Column(
                             children: [
                               PropertyOwnerCard(),
-                              SizedBox(height: 16),
+                              const SizedBox(height: 16),
                               ScheduleTourForm(),
                             ],
                           ),
                         ),
-                        SizedBox(width: 16),
+                        const SizedBox(width: 16),
                         // Right Panel: Property Details
                         Expanded(
                           flex: 2,
@@ -46,7 +48,7 @@ class PropertyDetailsPage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               PropertyImageCard(),
-                              SizedBox(height: 16),
+                              const SizedBox(height: 16),
                               PropertyDetails(),
                             ],
                           ),
@@ -60,17 +62,17 @@ class PropertyDetailsPage extends StatelessWidget {
                         Column(
                           children: [
                             PropertyOwnerCard(),
-                            SizedBox(height: 16),
+                            const SizedBox(height: 16),
                             ScheduleTourForm(),
                           ],
                         ),
-                        SizedBox(width: 16),
+                        const SizedBox(width: 16),
                         // Right Panel: Property Details
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             PropertyImageCard(),
-                            SizedBox(height: 16),
+                            const SizedBox(height: 16),
                             PropertyDetails(),
                           ],
                         ),
@@ -85,12 +87,14 @@ class PropertyDetailsPage extends StatelessWidget {
 }
 
 class PropertyOwnerCard extends StatelessWidget {
+  const PropertyOwnerCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isMobile = MediaQuery.of(context).size.width < 1200;
 
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
         borderRadius: BorderRadius.circular(12),
@@ -98,47 +102,47 @@ class PropertyOwnerCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             radius: 40,
             backgroundImage: AssetImage('assets/profile.png'),
           ),
-          SizedBox(height: 8),
-          Text(
+          const SizedBox(height: 8),
+          const Text(
             'Gaston Lapierre',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
           ),
-          Text(
+          const Text(
             '(Owner)',
             style: TextStyle(
               fontSize: 14,
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               IconButton(
-                icon: Icon(Icons.facebook, color: Colors.blue),
+                icon: const Icon(Icons.facebook, color: Colors.blue),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.camera_alt, color: Colors.pink),
+                icon: const Icon(Icons.camera_alt, color: Colors.pink),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.share, color: Colors.lightBlue),
+                icon: const Icon(Icons.share, color: Colors.lightBlue),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(FontAwesomeIcons.whatsapp, color: Colors.green),
+                icon: const Icon(FontAwesomeIcons.whatsapp, color: Colors.green),
                 onPressed: () {},
               ),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           !isMobile
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -150,8 +154,8 @@ class PropertyOwnerCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      icon: Icon(Icons.call),
-                      label: Text('Call Us'),
+                      icon: const Icon(Icons.call),
+                      label: const Text('Call Us'),
                       onPressed: () {},
                     ),
                     ElevatedButton.icon(
@@ -161,8 +165,8 @@ class PropertyOwnerCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      icon: Icon(Icons.message),
-                      label: Text('Message'),
+                      icon: const Icon(Icons.message),
+                      label: const Text('Message'),
                       onPressed: () {},
                     ),
                   ],
@@ -177,11 +181,11 @@ class PropertyOwnerCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      icon: Icon(Icons.call),
-                      label: Text('Call Us'),
+                      icon: const Icon(Icons.call),
+                      label: const Text('Call Us'),
                       onPressed: () {},
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     ElevatedButton.icon(
@@ -191,8 +195,8 @@ class PropertyOwnerCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      icon: Icon(Icons.message),
-                      label: Text('Message'),
+                      icon: const Icon(Icons.message),
+                      label: const Text('Message'),
                       onPressed: () {},
                     ),
                   ],
@@ -205,15 +209,17 @@ class PropertyOwnerCard extends StatelessWidget {
 
 // Schedule a Tour Form
 class ScheduleTourForm extends StatelessWidget {
+  const ScheduleTourForm({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
@@ -249,6 +255,8 @@ class ScheduleTourForm extends StatelessWidget {
 
 // Property Image Card
 class PropertyImageCard extends StatelessWidget {
+  const PropertyImageCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -257,7 +265,7 @@ class PropertyImageCard extends StatelessWidget {
           height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: AssetImage('assets/images/props4.jpg'),
               fit: BoxFit.cover,
             ),
@@ -267,12 +275,12 @@ class PropertyImageCard extends StatelessWidget {
           top: 16,
           left: 16,
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: Colors.orange,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: Text('For Sale', style: TextStyle(color: Colors.white)),
+            child: const Text('For Sale', style: TextStyle(color: Colors.white)),
           ),
         ),
       ],
@@ -281,10 +289,12 @@ class PropertyImageCard extends StatelessWidget {
 }
 
 class PropertyDetails extends StatelessWidget {
+  const PropertyDetails({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
         borderRadius: BorderRadius.circular(12),
@@ -293,17 +303,17 @@ class PropertyDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Title
-          Text(
+          const Text(
             'Hayfield Ashton Place Residences at Willow Brook Valley',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
 
           // Address
-          Row(
+          const Row(
             children: [
               Icon(Icons.location_on, color: Colors.purple, size: 16),
               SizedBox(width: 4),
@@ -313,11 +323,11 @@ class PropertyDetails extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
 
           // Price and Details
 
-          Text(
+          const Text(
             '₦80,675.00',
             style: TextStyle(
               color: Colors.green,
@@ -334,28 +344,28 @@ class PropertyDetails extends StatelessWidget {
             child: Wrap(
               children: [
                 _buildIconText(Icons.bed, '5 Bedroom', context),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 _buildIconText(Icons.bathtub, '4 Bathrooms', context),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 _buildIconText(Icons.square_foot, '1800sqft', context),
                 _buildIconText(Icons.bed, '5 Bedroom', context),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 _buildIconText(Icons.bathtub, '4 Bathrooms', context),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 _buildIconText(Icons.square_foot, '1800sqft', context),
               ],
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
 
           // Facilities
-          Text(
+          const Text(
             'Some Facility :',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Wrap(
             spacing: 8,
             runSpacing: 4,
@@ -368,21 +378,21 @@ class PropertyDetails extends StatelessWidget {
               _buildFacilityChip('Personal Theater', context),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
 
           // Property Details
-          Text(
+          const Text(
             'Property Details :',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8),
-          Text(
+          const SizedBox(height: 8),
+          const Text(
             'Property refers to any item that an individual or a business holds legal title to. This can include tangible items, such as houses, cars, or appliances, as well as intangible items that hold potential future value, such as stock and bond certificates. Legally, property is classified into two categories: personal property and real property.',
             style: TextStyle(fontSize: 14),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
 
           // Date
           Row(
@@ -394,7 +404,7 @@ class PropertyDetails extends StatelessWidget {
                     color: Theme.of(context).colorScheme.tertiary,
                     fontSize: 14),
               ),
-              Text(
+              const Text(
                 '10 May 2024',
                 style: TextStyle(fontSize: 12),
               ),
@@ -407,7 +417,7 @@ class PropertyDetails extends StatelessWidget {
 
   Widget _buildIconText(IconData icon, String text, BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       width: 150,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -415,7 +425,7 @@ class PropertyDetails extends StatelessWidget {
           Icon(icon, size: 16),
           Text(
             text,
-            style: TextStyle(fontSize: 12),
+            style: const TextStyle(fontSize: 12),
           ),
           Container(
             height: 10,
@@ -430,13 +440,13 @@ class PropertyDetails extends StatelessWidget {
 
   Widget _buildFacilityChip(String label, BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Theme.of(context).colorScheme.primary)),
       child: Text(
         label,
-        style: TextStyle(fontSize: 12),
+        style: const TextStyle(fontSize: 12),
       ),
     );
   }

@@ -20,18 +20,18 @@ class IncomeWidget extends StatelessWidget {
   final IconData icon;
 
   const IncomeWidget({
-    Key? key,
+    super.key,
     required this.totalIncome,
     required this.percentageChange,
     required this.icon,
     required this.title,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary.withOpacity(.2),
         borderRadius: BorderRadius.circular(10.0),
@@ -44,35 +44,35 @@ class IncomeWidget extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16.0,
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Text(
                 '₦${totalIncome.toStringAsFixed(2)}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.arrow_upward,
                     color: Colors.green,
                     size: 18.0,
                   ),
-                  SizedBox(width: 4.0),
+                  const SizedBox(width: 4.0),
                   Text(
                     '${percentageChange.toStringAsFixed(1)}%',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.green,
                       fontSize: 14.0,
                     ),
                   ),
-                  Text(
+                  const Text(
                     ' vs last month',
                     style: TextStyle(
                       fontSize: 12.0,
@@ -93,7 +93,7 @@ class IncomeWidget extends StatelessWidget {
                       color: Colors.grey.withOpacity(.5),
                       borderRadius: BorderRadius.circular(5)),
                   child: Icon(icon)),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               IconButton(
@@ -101,7 +101,7 @@ class IncomeWidget extends StatelessWidget {
                   // Handle "See Details" button press
                   print('See Details button pressed');
                 },
-                icon: Row(
+                icon: const Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

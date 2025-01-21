@@ -114,8 +114,8 @@ class PoolModal extends StatelessWidget {
   const PoolModal({
     required this.property,
     required this.pool,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -137,7 +137,7 @@ class PoolModal extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    "Amount Paid: \₦${pool.sharePrice.toStringAsFixed(2)}",
+                    "Amount Paid: ₦${pool.sharePrice.toStringAsFixed(2)}",
                     style: Theme.of(context).textTheme.bodyLarge ??
                         const TextStyle(fontSize: 16),
                   ),
@@ -175,7 +175,7 @@ class PoolModal extends StatelessWidget {
                         width: 20,
                       ),
                       Text(
-                        "Share Price: \₦${pool.sharePrice.toStringAsFixed(2)}",
+                        "Share Price: ₦${pool.sharePrice.toStringAsFixed(2)}",
                         style: Theme.of(context).textTheme.bodyLarge ??
                             const TextStyle(fontSize: 16),
                       ),

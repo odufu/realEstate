@@ -10,7 +10,7 @@ class ClientsPropertyCard extends StatelessWidget {
   final double progressValue;
   final Color progressColor;
 
-  ClientsPropertyCard({
+  const ClientsPropertyCard({super.key, 
     required this.icon,
     required this.iconColor,
     required this.title,
@@ -24,7 +24,7 @@ class ClientsPropertyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color(0xFF1E1E2E), // Dark card background
+      color: const Color(0xFF1E1E2E), // Dark card background
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
@@ -36,7 +36,7 @@ class ClientsPropertyCard extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: iconColor.withOpacity(0.2),
                     shape: BoxShape.circle,
@@ -47,13 +47,13 @@ class ClientsPropertyCard extends StatelessWidget {
                     size: 24,
                   ),
                 ),
-                SizedBox(width: 12),
+                const SizedBox(width: 12),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class ClientsPropertyCard extends StatelessWidget {
                     ),
                     Text(
                       subtitle,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white70,
                         fontSize: 12,
                       ),
@@ -70,20 +70,20 @@ class ClientsPropertyCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   footerTitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 14,
                   ),
                 ),
                 Text(
                   footerValue,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class ClientsPropertyCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             ClipRRect(
               borderRadius: BorderRadius.circular(4),
               child: LinearProgressIndicator(
@@ -109,10 +109,12 @@ class ClientsPropertyCard extends StatelessWidget {
 }
 
 class ClientsPropertyCardWidget extends StatelessWidget {
+  const ClientsPropertyCardWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF121212), // App background color
+      backgroundColor: const Color(0xFF121212), // App background color
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Row(
@@ -130,7 +132,7 @@ class ClientsPropertyCardWidget extends StatelessWidget {
                 progressColor: Colors.green,
               ),
             ),
-            SizedBox(width: 16),
+            const SizedBox(width: 16),
             Expanded(
               child: ClientsPropertyCard(
                 icon: Icons.house_siding,
@@ -143,7 +145,7 @@ class ClientsPropertyCardWidget extends StatelessWidget {
                 progressColor: Colors.orange,
               ),
             ),
-            SizedBox(width: 16),
+            const SizedBox(width: 16),
             Expanded(
               child: ClientsPropertyCard(
                 icon: Icons.attach_money,

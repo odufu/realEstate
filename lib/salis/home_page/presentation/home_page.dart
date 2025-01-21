@@ -6,7 +6,7 @@ import '../../props/presentation/pages/prop_details.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({super.key});
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     Image.asset(
-                      "assets/tpumpyLogo.png",
+                      "assets/dekolhome.png",
                       width: 40,
                     ),
                     const SizedBox(
@@ -263,12 +263,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: IconButton(
                                   onPressed: () {},
                                   icon: Container(
-                                    padding: EdgeInsets.all(5),
+                                    padding: const EdgeInsets.all(5),
                                     decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(.8),
                                         borderRadius:
                                             BorderRadius.circular(50)),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.favorite,
                                       color: Colors.red,
                                       size: 15,

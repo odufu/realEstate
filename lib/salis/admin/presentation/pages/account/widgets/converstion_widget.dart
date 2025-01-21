@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart'; // Add this dependency in pubspec.yaml
 
 class ConversionsWidget extends StatelessWidget {
+  const ConversionsWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Color(0xFF1E1E2E),
+        color: const Color(0xFF1E1E2E),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -16,7 +18,7 @@ class ConversionsWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // Title
-          Text(
+          const Text(
             "Conversions",
             style: TextStyle(
               color: Colors.white,
@@ -24,13 +26,13 @@ class ConversionsWidget extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           // Circular Progress Indicator
           CircularPercentIndicator(
             radius: 75.0,
             lineWidth: 10.0,
             percent: 0.652, // 65.2% as a fraction
-            center: Column(
+            center: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
@@ -54,9 +56,9 @@ class ConversionsWidget extends StatelessWidget {
             backgroundColor: Colors.grey[800]!,
             circularStrokeCap: CircularStrokeCap.round,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           // Weekly Stats
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
@@ -103,20 +105,20 @@ class ConversionsWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           // View Details Button
           ElevatedButton(
             onPressed: () {
               // Add action here
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF29293F),
+              backgroundColor: const Color(0xFF29293F),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
             ),
-            child: Text(
+            child: const Text(
               "View Details",
               style: TextStyle(color: Colors.white70),
             ),
@@ -130,7 +132,7 @@ class ConversionsWidget extends StatelessWidget {
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xFF121212),
+        backgroundColor: const Color(0xFF121212),
         body: Center(
           child: ConversionsWidget(),
         ),

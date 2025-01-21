@@ -16,7 +16,7 @@ class _MyPropsState extends State<MyProps> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 450, // Maximum width for each card
             mainAxisExtent: 470,
             mainAxisSpacing: 16.0, // Vertical spacing between cards

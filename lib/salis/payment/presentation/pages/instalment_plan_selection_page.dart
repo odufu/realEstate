@@ -20,8 +20,8 @@ class InstalmentPlanSelectionPage extends StatefulWidget {
     required this.closingPeriod,
     required this.property,
     required this.minInitialPayment,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<InstalmentPlanSelectionPage> createState() =>
@@ -162,7 +162,7 @@ class _InstalmentPlanSelectionPageState
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
                           ),
-                          Divider(height: 20),
+                          const Divider(height: 20),
                           ...instalmentPlan.map((plan) {
                             return ListTile(
                               leading: Icon(Icons.date_range,
@@ -172,7 +172,7 @@ class _InstalmentPlanSelectionPageState
                                   style: const TextStyle(
                                       fontWeight: FontWeight.bold)),
                             );
-                          }).toList(),
+                          }),
                         ],
                       ),
                     ),

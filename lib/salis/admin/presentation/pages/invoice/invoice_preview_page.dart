@@ -56,7 +56,7 @@ class InvoicePage extends StatelessWidget {
               // Table
               // ignore: deprecated_member_use
               pw.Table.fromTextArray(
-                headerDecoration: pw.BoxDecoration(color: PdfColors.deepPurple),
+                headerDecoration: const pw.BoxDecoration(color: PdfColors.deepPurple),
                 headerStyle: pw.TextStyle(
                     color: PdfColors.white, fontWeight: pw.FontWeight.bold),
                 headers: ["Property Description", "Qty", "Price", "Total"],

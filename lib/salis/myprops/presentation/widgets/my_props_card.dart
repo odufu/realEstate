@@ -18,9 +18,9 @@ class MyPropsCard extends StatefulWidget {
   final Property property;
 
   const MyPropsCard({
-    Key? key,
+    super.key,
     required this.property,
-  }) : super(key: key);
+  });
 
   @override
   _MyPropsCardState createState() => _MyPropsCardState();
@@ -220,7 +220,7 @@ class _MyPropsCardState extends State<MyPropsCard> {
                               const Icon(Icons.location_on,
                                   size: 18, color: Colors.red),
                               const SizedBox(width: 4),
-                              Container(
+                              SizedBox(
                                 width: MediaQuery.of(context).size.width * .4,
                                 child: Text(
                                   widget.property.address,
@@ -255,7 +255,7 @@ class _MyPropsCardState extends State<MyPropsCard> {
                           const SizedBox(height: 8),
                           Row(
                             children: [
-                              Container(
+                              SizedBox(
                                   width: MediaQuery.of(context).size.width * .8,
                                   child: Text(
                                     widget.property.details,
@@ -313,7 +313,7 @@ class _MyPropsCardState extends State<MyPropsCard> {
                           const SizedBox(height: 8),
                           Row(
                             children: [
-                              Container(
+                              SizedBox(
                                   width: MediaQuery.of(context).size.width * .8,
                                   child: Text(
                                     widget.property.details,
@@ -351,7 +351,7 @@ class _MyPropsCardState extends State<MyPropsCard> {
                                   const Icon(Icons.location_on,
                                       size: 18, color: Colors.red),
                                   const SizedBox(width: 4),
-                                  Container(
+                                  SizedBox(
                                     width:
                                         MediaQuery.of(context).size.width * .4,
                                     child: Text(
@@ -400,7 +400,7 @@ class _MyPropsCardState extends State<MyPropsCard> {
                                 context);
                           },
                         )
-                      : SizedBox.shrink(),
+                      : const SizedBox.shrink(),
               AppButton(
                 text: "View",
                 onPress: () {

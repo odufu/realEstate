@@ -61,7 +61,7 @@ class _PropertyCardState extends State<PropertyCard> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Stack(children: [
-              Container(
+              SizedBox(
                 height: 150,
                 child: Stack(
                   children: [
@@ -123,7 +123,7 @@ class _PropertyCardState extends State<PropertyCard> {
                     decoration: BoxDecoration(
                         color: Colors.black.withOpacity(.5),
                         borderRadius: BorderRadius.circular(5)),
-                    child: Icon(
+                    child: const Icon(
                       Icons.favorite,
                       color: Colors.white,
                     )),
@@ -138,7 +138,7 @@ class _PropertyCardState extends State<PropertyCard> {
                       decoration: BoxDecoration(
                           color: Colors.green.withOpacity(.5),
                           borderRadius: BorderRadius.circular(5)),
-                      child: Text(
+                      child: const Text(
                         textAlign: TextAlign.center,
                         "Sale",
                         style: TextStyle(
@@ -148,7 +148,7 @@ class _PropertyCardState extends State<PropertyCard> {
               ),
             ]),
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -166,7 +166,7 @@ class _PropertyCardState extends State<PropertyCard> {
                             Icons.apartment,
                             color: Theme.of(context).colorScheme.primary,
                           )),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Column(
@@ -191,7 +191,7 @@ class _PropertyCardState extends State<PropertyCard> {
                     ],
                   ),
                   const SizedBox(height: 10),
-                  Wrap(
+                  const Wrap(
                     spacing: 20,
                     runSpacing: 5,
                     children: [
@@ -220,7 +220,7 @@ class _PropertyCardState extends State<PropertyCard> {
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               thickness: .5,
             ),
             Padding(
@@ -228,7 +228,7 @@ class _PropertyCardState extends State<PropertyCard> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "N ",
@@ -298,7 +298,7 @@ class FeatureWidget extends StatelessWidget {
     return Container(
       width: 70,
       height: 30,
-      padding: EdgeInsets.all(4),
+      padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
@@ -309,20 +309,20 @@ class FeatureWidget extends StatelessWidget {
             icon,
             size: 15,
           ),
-          SizedBox(
+          const SizedBox(
             width: 4,
           ),
           Text(
             textAlign: TextAlign.start,
             value,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
           ),
-          SizedBox(
+          const SizedBox(
             width: 4,
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
           )
         ],
       ),

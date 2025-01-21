@@ -12,8 +12,8 @@ class CoOwnershipPaymentSummaryPage extends StatefulWidget {
 
   const CoOwnershipPaymentSummaryPage({
     required this.property,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<CoOwnershipPaymentSummaryPage> createState() =>
@@ -86,7 +86,7 @@ class _CoOwnershipPaymentSummaryPageState
                         ),
                         Row(
                           children: [
-                            Icon(
+                            const Icon(
                               color: Colors.green,
                               Icons.paid,
                               size: 15,
@@ -135,7 +135,7 @@ class _CoOwnershipPaymentSummaryPageState
                             const SizedBox(
                               width: 5,
                             ),
-                            Container(
+                            SizedBox(
                               width: MediaQuery.of(context).size.width * .7,
                               child: PoolProgressBar(property: widget.property),
                             ),
@@ -145,7 +145,7 @@ class _CoOwnershipPaymentSummaryPageState
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 )
               ],

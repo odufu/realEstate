@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomerDetailsPage extends StatelessWidget {
+  const CustomerDetailsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,8 +10,8 @@ class CustomerDetailsPage extends StatelessWidget {
         title: TextField(
           decoration: InputDecoration(
             hintText: 'Search...',
-            hintStyle: TextStyle(color: Colors.grey),
-            prefixIcon: Icon(Icons.search, color: Colors.grey),
+            hintStyle: const TextStyle(color: Colors.grey),
+            prefixIcon: const Icon(Icons.search, color: Colors.grey),
             filled: true,
             fillColor: Theme.of(context).colorScheme.tertiary,
             border: OutlineInputBorder(
@@ -20,15 +22,15 @@ class CustomerDetailsPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.brightness_6),
+            icon: const Icon(Icons.brightness_6),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.notifications),
+            icon: const Icon(Icons.notifications),
             onPressed: () {},
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
               backgroundImage: AssetImage('assets/profile.png'),
             ),
@@ -45,7 +47,7 @@ class CustomerDetailsPage extends StatelessWidget {
                   height: 150,
                   color: Theme.of(context).colorScheme.primary,
                 ),
-                Positioned(
+                const Positioned(
                   top: 100,
                   left: 20,
                   child: CircleAvatar(
@@ -60,8 +62,8 @@ class CustomerDetailsPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10),
-                  Text(
+                  const SizedBox(height: 10),
+                  const Text(
                     'Daavid Nummi',
                     style: TextStyle(
                       color: Colors.white,
@@ -69,14 +71,14 @@ class CustomerDetailsPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
+                  const Text(
                     'EastTribune.nl',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       ElevatedButton(
@@ -87,9 +89,9 @@ class CustomerDetailsPage extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {},
-                        child: Text('Chat Us'),
+                        child: const Text('Chat Us'),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.grey[800],
@@ -98,12 +100,12 @@ class CustomerDetailsPage extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {},
-                        child: Text('Phone'),
+                        child: const Text('Phone'),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Row(
+                  const SizedBox(height: 20),
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
@@ -146,8 +148,8 @@ class CustomerDetailsPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Row(
+                  const SizedBox(height: 20),
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
@@ -190,30 +192,30 @@ class CustomerDetailsPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Text(
+                  const SizedBox(height: 20),
+                  const Text(
                     'Preferences:',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14,
                     ),
                   ),
-                  SizedBox(height: 5),
-                  Text(
+                  const SizedBox(height: 5),
+                  const Text(
                     '\u2022 3-4 bedrooms, 2-3 bathrooms',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                     ),
                   ),
-                  Text(
+                  const Text(
                     '\u2022 Close to public transportation, good school district, backyard, modern kitchen',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -237,14 +239,14 @@ class InfoCard extends StatelessWidget {
   final String subtitle;
   final int value;
 
-  InfoCard(this.title, this.subtitle, this.value);
+  const InfoCard(this.title, this.subtitle, this.value, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(8.0),
-        padding: EdgeInsets.all(16.0),
+        margin: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         decoration: BoxDecoration(
           color: Colors.grey[900],
           borderRadius: BorderRadius.circular(10),
@@ -254,15 +256,15 @@ class InfoCard extends StatelessWidget {
           children: [
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.grey,
                 fontSize: 14,
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               subtitle,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

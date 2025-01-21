@@ -6,6 +6,8 @@ import '../pages/property_details_page.dart';
 import 'stats_card_widget.dart';
 
 class ListingTablePage extends StatelessWidget {
+  const ListingTablePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,8 +19,8 @@ class ListingTablePage extends StatelessWidget {
         child: Column(
           children: [
             // Stats Panel
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: StatsCards(),
             ),
             // Expandable DataTable
@@ -26,13 +28,13 @@ class ListingTablePage extends StatelessWidget {
               children: [
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: Container(
+                  child: SizedBox(
                     width: 1035,
                     child: DataTable(
                       dataRowHeight: 80,
-                      headingRowColor: MaterialStateProperty.all(
+                      headingRowColor: WidgetStateProperty.all(
                           const Color.fromARGB(255, 255, 255, 255)),
-                      dataRowColor: MaterialStateProperty.all(
+                      dataRowColor: WidgetStateProperty.all(
                           const Color.fromARGB(255, 255, 255, 255)),
                       columnSpacing: 20,
                       columns: [
@@ -288,11 +290,11 @@ class ListingTablePage extends StatelessWidget {
               Expanded(
                 child: Text(
                   title,
-                  style: TextStyle(fontSize: 14),
+                  style: const TextStyle(fontSize: 14),
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
                     color:
                         Theme.of(context).colorScheme.tertiary.withOpacity(.3),
@@ -305,7 +307,7 @@ class ListingTablePage extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             value,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
@@ -333,7 +335,7 @@ class ListingTablePage extends StatelessWidget {
               const SizedBox(height: 8),
               Row(
                 children: [
-                  Text(
+                  const Text(
                     "See Details",
                     style: TextStyle(color: Colors.blueAccent, fontSize: 12),
                   ),

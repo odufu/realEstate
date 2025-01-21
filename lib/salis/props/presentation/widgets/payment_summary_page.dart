@@ -1,7 +1,5 @@
 import '../../../core/utils/helper_functions.dart';
-import '../../../core/widgets/app_button.dart';
 import '../../../home/presentation/pages/home_page.dart';
-import '../../../myprops/presentation/my_props.dart';
 import 'package:flutter/material.dart';
 
 class PaymentSummaryPage extends StatelessWidget {

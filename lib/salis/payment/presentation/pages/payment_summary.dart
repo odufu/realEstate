@@ -9,8 +9,7 @@ class PaymentSummary extends StatelessWidget {
   final double payment;
 
   const PaymentSummary(
-      {required this.payment, required this.property, Key? key})
-      : super(key: key);
+      {required this.payment, required this.property, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class PaymentSummary extends StatelessWidget {
 
     return Scaffold(
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           boxShadow: [BoxShadow(color: Colors.black, blurRadius: 10)],
         ),

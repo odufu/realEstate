@@ -128,7 +128,7 @@ class _PropDetailsState extends State<PropDetails> {
                       color: Theme.of(context).colorScheme.primary,
                     ),
                   ),
-                  Icon(Icons.video_camera_back_sharp)
+                  const Icon(Icons.video_camera_back_sharp)
                 ],
               ),
             ),
@@ -417,7 +417,7 @@ class _PropDetailsState extends State<PropDetails> {
                                     ),
                                     Row(
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           color: Colors.green,
                                           Icons.paid,
                                           size: 15,
@@ -473,7 +473,7 @@ class _PropDetailsState extends State<PropDetails> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             )
                           ],
@@ -535,7 +535,7 @@ class _PropDetailsState extends State<PropDetails> {
                                         ),
                                         Row(
                                           children: [
-                                            Icon(
+                                            const Icon(
                                               color: Colors.green,
                                               Icons.paid,
                                               size: 15,
@@ -589,7 +589,7 @@ class _PropDetailsState extends State<PropDetails> {
                                             const SizedBox(
                                               width: 5,
                                             ),
-                                            Container(
+                                            SizedBox(
                                               width: MediaQuery.of(context)
                                                       .size
                                                       .width *
@@ -603,7 +603,7 @@ class _PropDetailsState extends State<PropDetails> {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 )
                               ],
@@ -641,7 +641,7 @@ class _PropDetailsState extends State<PropDetails> {
                                       children: [
                                         Row(
                                           children: [
-                                            Icon(
+                                            const Icon(
                                               color: Colors.green,
                                               Icons.paid,
                                               size: 15,
@@ -661,7 +661,7 @@ class _PropDetailsState extends State<PropDetails> {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 )
                               ],
@@ -703,7 +703,7 @@ class _PropDetailsState extends State<PropDetails> {
         ),
       ),
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(color: Colors.white, boxShadow: [
+        decoration: const BoxDecoration(color: Colors.white, boxShadow: [
           BoxShadow(
             color: Colors.black,
             blurRadius: 10,

@@ -29,13 +29,13 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(width: 100, child: Image.asset("assets/tpumpyLogo.png")),
+              SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
               //assets/tpupylogo.png
               const SizedBox(
                 height: 60,
               ),
               Text(
-                "T-PUMPY",
+                "DEKOL",
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w100,
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     color: Theme.of(context).colorScheme.surface),
               ),
               Text(
-                "CONCEPT",
+                "HOMES",
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,

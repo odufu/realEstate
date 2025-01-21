@@ -1,0 +1,15 @@
+{
+  "cmake.sourceDirectory": "C:/Users/DELL/Documents/PROJECTS/realestate/windows",
+  "files.exclude": {
+    "linux": true,
+    "macos": true,
+    "ios": true,
+    ".vscode": true,
+    ".idea": true,
+    ".dart_tool": true,
+    "README.md": true,
+    ".metadata": true,
+    ".flutter-plugins-dependencies": true,
+    ".flutter-plugins": true
+  }
+}

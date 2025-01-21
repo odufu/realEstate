@@ -5,6 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AddPropertyPage extends StatefulWidget {
+  const AddPropertyPage({super.key});
+
   @override
   _AddPropertyPageState createState() => _AddPropertyPageState();
 }
@@ -37,7 +39,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
   }
 
   void _startSliderTimer() {
-    _sliderTimer = Timer.periodic(Duration(seconds: 3), (timer) {
+    _sliderTimer = Timer.periodic(const Duration(seconds: 3), (timer) {
       if (_selectedImages.isNotEmpty) {
         int nextPage = _pageController.page!.toInt() + 1;
         if (nextPage >= _selectedImages.length) {
@@ -45,7 +47,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
         }
         _pageController.animateToPage(
           nextPage,
-          duration: Duration(milliseconds: 300),
+          duration: const Duration(milliseconds: 300),
           curve: Curves.easeInOut,
         );
       }
@@ -53,7 +55,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
   }
 
   void _pickImages(BuildContext context) async {
-    final List<XFile>? images = await _picker.pickMultiImage();
+    final List<XFile> images = await _picker.pickMultiImage();
     if (images != null) {
       setState(() {
         _selectedImages.addAll(images);
@@ -64,11 +66,11 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF1E1E2C),
+      backgroundColor: const Color(0xFF1E1E2C),
       appBar: AppBar(
-        backgroundColor: Color(0xFF1E1E2C),
+        backgroundColor: const Color(0xFF1E1E2C),
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Add Property',
           style: TextStyle(color: Colors.white),
         ),
@@ -77,7 +79,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
         builder: (context, constraints) {
           bool isDesktop = constraints.maxWidth > 800;
           return SingleChildScrollView(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: ConstrainedBox(
               constraints: BoxConstraints(minHeight: constraints.maxHeight),
               child: IntrinsicHeight(
@@ -90,15 +92,15 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                       flex: 1,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFF29293D),
+                          color: const Color(0xFF29293D),
                           borderRadius: BorderRadius.circular(12.0),
                         ),
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             // Property Image Slider
-                            Container(
+                            SizedBox(
                               height: 300,
                               child: Stack(
                                 children: [
@@ -108,7 +110,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                           itemCount: _selectedImages.length,
                                           itemBuilder: (context, index) {
                                             return Container(
-                                              margin: EdgeInsets.symmetric(
+                                              margin: const EdgeInsets.symmetric(
                                                   horizontal: 4.0),
                                               decoration: BoxDecoration(
                                                 borderRadius:
@@ -129,7 +131,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                           ),
-                                          child: Center(
+                                          child: const Center(
                                             child: Text(
                                               'No Image',
                                               style:
@@ -144,7 +146,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                       top: 0,
                                       bottom: 0,
                                       child: IconButton(
-                                        icon: Icon(Icons.arrow_back_ios,
+                                        icon: const Icon(Icons.arrow_back_ios,
                                             color: Colors.white),
                                         onPressed: () {
                                           int previousPage =
@@ -154,7 +156,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                           _pageController.animateToPage(
                                             previousPage,
                                             duration:
-                                                Duration(milliseconds: 300),
+                                                const Duration(milliseconds: 300),
                                             curve: Curves.easeInOut,
                                           );
                                         },
@@ -166,7 +168,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                       top: 0,
                                       bottom: 0,
                                       child: IconButton(
-                                        icon: Icon(Icons.arrow_forward_ios,
+                                        icon: const Icon(Icons.arrow_forward_ios,
                                             color: Colors.white),
                                         onPressed: () {
                                           int nextPage =
@@ -176,7 +178,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                           _pageController.animateToPage(
                                             nextPage,
                                             duration:
-                                                Duration(milliseconds: 300),
+                                                const Duration(milliseconds: 300),
                                             curve: Curves.easeInOut,
                                           );
                                         },
@@ -185,32 +187,32 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                 ],
                               ),
                             ),
-                            SizedBox(height: 16.0),
+                            const SizedBox(height: 16.0),
                             Text(
                               _propertyName.isEmpty
                                   ? 'Property Name'
                                   : _propertyName,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 4.0),
                             Text(
                               _propertyAddress.isEmpty
                                   ? 'Address'
                                   : _propertyAddress,
                               style:
-                                  TextStyle(color: Colors.grey, fontSize: 14.0),
+                                  const TextStyle(color: Colors.grey, fontSize: 14.0),
                             ),
-                            SizedBox(height: 8.0),
+                            const SizedBox(height: 8.0),
                             Text(
                               'Price: ₦${_propertyPrice.isEmpty ? '0.00' : _propertyPrice}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white, fontSize: 14.0),
                             ),
-                            SizedBox(height: 16.0),
+                            const SizedBox(height: 16.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -247,10 +249,10 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                           // Image Uploader
                           Container(
                             decoration: BoxDecoration(
-                              color: Color(0xFF29293D),
+                              color: const Color(0xFF29293D),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: GestureDetector(
                               onTap: () => _pickImages(context),
                               child: Container(
@@ -259,7 +261,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                   border: Border.all(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
-                                child: Center(
+                                child: const Center(
                                   child: Text(
                                     'Drop your images here, or click to browse\n(1600 x 1200 recommended)',
                                     textAlign: TextAlign.center,
@@ -269,7 +271,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 16.0),
+                          const SizedBox(height: 16.0),
                           // Property Form
                           PropertyFormField(
                             hintText: 'Name',
@@ -278,7 +280,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                 setState(() => _propertyName = value),
                           ),
                           PropertyFormField(
-                            prefixIcon: Icon(FontAwesomeIcons.locationDot),
+                            prefixIcon: const Icon(FontAwesomeIcons.locationDot),
                             hintText: 'Address',
                             label: 'Address',
                             onChanged: (value) =>
@@ -287,7 +289,7 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                           PropertyFormField(
                             hintText: 'Price',
                             label: 'Price',
-                            prefixIcon: Icon(FontAwesomeIcons.nairaSign,
+                            prefixIcon: const Icon(FontAwesomeIcons.nairaSign,
                                 color: Colors.grey),
                             onChanged: (value) =>
                                 setState(() => _propertyPrice = value),
@@ -334,17 +336,17 @@ class InfoChip extends StatelessWidget {
   final IconData icon;
   final String label;
 
-  InfoChip({required this.icon, required this.label});
+  const InfoChip({super.key, required this.icon, required this.label});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Icon(icon, color: Colors.grey, size: 16.0),
-        SizedBox(width: 4.0),
+        const SizedBox(width: 4.0),
         Text(
           label,
-          style: TextStyle(color: Colors.grey, fontSize: 12.0),
+          style: const TextStyle(color: Colors.grey, fontSize: 12.0),
         ),
       ],
     );
@@ -357,8 +359,8 @@ class PropertyFormField extends StatelessWidget {
   final Icon? prefixIcon;
   final Function(String)? onChanged;
 
-  PropertyFormField(
-      {required this.hintText,
+  const PropertyFormField(
+      {super.key, required this.hintText,
       required this.label,
       this.prefixIcon,
       this.onChanged});
@@ -368,20 +370,20 @@ class PropertyFormField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
       child: TextField(
-        style: TextStyle(color: Colors.white),
+        style: const TextStyle(color: Colors.white),
         onChanged: onChanged,
         decoration: InputDecoration(
           labelText: label,
-          labelStyle: TextStyle(color: Colors.grey),
+          labelStyle: const TextStyle(color: Colors.grey),
           hintText: hintText,
-          hintStyle: TextStyle(color: Colors.grey),
+          hintStyle: const TextStyle(color: Colors.grey),
           prefixIcon: prefixIcon,
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.grey),
+            borderSide: const BorderSide(color: Colors.grey),
             borderRadius: BorderRadius.circular(8.0),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: const BorderSide(color: Colors.blue),
             borderRadius: BorderRadius.circular(8.0),
           ),
         ),

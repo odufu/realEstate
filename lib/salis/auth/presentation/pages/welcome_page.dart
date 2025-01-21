@@ -18,9 +18,9 @@ class WelcomePage extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            SizedBox(width: 100, child: Image.asset("assets/tpumpyLogo.png")),
+            SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
             Text(
-              "T-PUMPY",
+              "DEKOL",
               style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w100,
@@ -28,7 +28,7 @@ class WelcomePage extends StatelessWidget {
                   color: Theme.of(context).colorScheme.surface),
             ),
             Text(
-              "CONCEPTS",
+              "H O M E S",
               style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,

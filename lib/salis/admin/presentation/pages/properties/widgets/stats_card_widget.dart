@@ -24,14 +24,14 @@ class StatsCards extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       "Total Incomes",
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Theme.of(context)
                             .colorScheme
@@ -45,7 +45,7 @@ class StatsCards extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
+              const Text(
                 "₦ 12,7812.09",
                 style: TextStyle(
                   fontSize: 18,
@@ -56,7 +56,7 @@ class StatsCards extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "+34.4%",
@@ -65,18 +65,18 @@ class StatsCards extends StatelessWidget {
                           fontSize: 12,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                      SizedBox(width: 4),
                       Text(
                         "vs last month",
                         style:
-                            const TextStyle(color: Colors.grey, fontSize: 12),
+                            TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "See Details",
                         style:
                             TextStyle(color: Colors.blueAccent, fontSize: 12),
@@ -106,14 +106,14 @@ class StatsCards extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       "Total Properties",
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Theme.of(context)
                             .colorScheme
@@ -127,7 +127,7 @@ class StatsCards extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
+              const Text(
                 "15,780 Unit",
                 style: TextStyle(
                   fontSize: 18,
@@ -138,7 +138,7 @@ class StatsCards extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "-8.5%",
@@ -147,18 +147,18 @@ class StatsCards extends StatelessWidget {
                           fontSize: 12,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                      SizedBox(width: 4),
                       Text(
                         "vs last month",
                         style:
-                            const TextStyle(color: Colors.grey, fontSize: 12),
+                            TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "See Details",
                         style:
                             TextStyle(color: Colors.blueAccent, fontSize: 12),
@@ -188,14 +188,14 @@ class StatsCards extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       "Unit Sold",
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Theme.of(context)
                             .colorScheme
@@ -209,7 +209,7 @@ class StatsCards extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
+              const Text(
                 "893 Unit",
                 style: TextStyle(
                   fontSize: 18,
@@ -220,7 +220,7 @@ class StatsCards extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "+17%",
@@ -229,18 +229,18 @@ class StatsCards extends StatelessWidget {
                           fontSize: 12,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                      SizedBox(width: 4),
                       Text(
                         "vs last month",
                         style:
-                            const TextStyle(color: Colors.grey, fontSize: 12),
+                            TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "See Details",
                         style:
                             TextStyle(color: Colors.blueAccent, fontSize: 12),
@@ -270,14 +270,14 @@ class StatsCards extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       "Unit Pending",
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Theme.of(context)
                             .colorScheme
@@ -291,7 +291,7 @@ class StatsCards extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Text(
+              const Text(
                 "459 Unit",
                 style: TextStyle(
                   fontSize: 18,
@@ -302,7 +302,7 @@ class StatsCards extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Text(
                         "-12%",
@@ -311,18 +311,18 @@ class StatsCards extends StatelessWidget {
                           fontSize: 12,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                      SizedBox(width: 4),
                       Text(
                         "vs last month",
                         style:
-                            const TextStyle(color: Colors.grey, fontSize: 12),
+                            TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "See Details",
                         style:
                             TextStyle(color: Colors.blueAccent, fontSize: 12),

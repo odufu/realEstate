@@ -1,35 +1,37 @@
 import 'package:flutter/material.dart';
 
 class OrderListPage extends StatelessWidget {
+  const OrderListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF121212), // Dark background
+      backgroundColor: const Color(0xFF121212), // Dark background
       appBar: AppBar(
-        backgroundColor: Color(0xFF1E1E2E),
+        backgroundColor: const Color(0xFF1E1E2E),
         elevation: 0,
-        title: Text(
+        title: const Text(
           'All Order List',
           style: TextStyle(color: Colors.white),
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.light_mode, color: Colors.white),
+            icon: const Icon(Icons.light_mode, color: Colors.white),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.grid_view, color: Colors.white),
+            icon: const Icon(Icons.grid_view, color: Colors.white),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.notifications, color: Colors.white),
+            icon: const Icon(Icons.notifications, color: Colors.white),
             onPressed: () {},
           ),
-          CircleAvatar(
+          const CircleAvatar(
             backgroundColor: Colors.grey,
             child: Icon(Icons.person, color: Colors.white),
           ),
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
         ],
       ),
       body: Padding(
@@ -43,12 +45,12 @@ class OrderListPage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
-                        color: Color(0xFF1E1E2E),
+                        color: const Color(0xFF1E1E2E),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Search...',
@@ -59,12 +61,12 @@ class OrderListPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: 16),
+                  const SizedBox(width: 16),
                   DropdownButton<String>(
-                    dropdownColor: Color(0xFF1E1E2E),
+                    dropdownColor: const Color(0xFF1E1E2E),
                     value: 'This Month',
                     onChanged: (value) {},
-                    items: [
+                    items: const [
                       DropdownMenuItem(
                         value: 'This Month',
                         child: Text(
@@ -83,19 +85,19 @@ class OrderListPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               // Table
               DataTable(
-                headingRowColor: MaterialStateColor.resolveWith(
-                    (states) => Color(0xFF1E1E2E)),
-                dataRowColor: MaterialStateColor.resolveWith(
-                    (states) => Color(0xFF1E1E2E)),
-                headingTextStyle: TextStyle(
+                headingRowColor: WidgetStateColor.resolveWith(
+                    (states) => const Color(0xFF1E1E2E)),
+                dataRowColor: WidgetStateColor.resolveWith(
+                    (states) => const Color(0xFF1E1E2E)),
+                headingTextStyle: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
-                dataTextStyle: TextStyle(color: Colors.white70),
-                columns: [
+                dataTextStyle: const TextStyle(color: Colors.white70),
+                columns: const [
                   DataColumn(label: Text('Photo & Name')),
                   DataColumn(label: Text('Purchase Date')),
                   DataColumn(label: Text('Contact')),
@@ -153,7 +155,7 @@ class OrderListPage extends StatelessWidget {
               CircleAvatar(
                 backgroundImage: NetworkImage(photoUrl),
               ),
-              SizedBox(width: 8),
+              const SizedBox(width: 8),
               Text(name),
             ],
           ),
@@ -164,7 +166,7 @@ class OrderListPage extends StatelessWidget {
         DataCell(Text(amount)),
         DataCell(
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: status == 'Paid'
                   ? Colors.green
@@ -175,7 +177,7 @@ class OrderListPage extends StatelessWidget {
             ),
             child: Text(
               status,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ),
         ),
@@ -183,15 +185,15 @@ class OrderListPage extends StatelessWidget {
           Row(
             children: [
               IconButton(
-                icon: Icon(Icons.visibility, color: Colors.white),
+                icon: const Icon(Icons.visibility, color: Colors.white),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.edit, color: Colors.blue),
+                icon: const Icon(Icons.edit, color: Colors.blue),
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.delete, color: Colors.red),
+                icon: const Icon(Icons.delete, color: Colors.red),
                 onPressed: () {},
               ),
             ],

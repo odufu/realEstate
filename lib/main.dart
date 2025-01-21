@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:realestate/salis/admin/auth/presentation/pages/admin_splash_screen.dart';
 import '/salis/admin/presentation/pages/admin_pannel_page.dart';
 import '/salis/auth/presentation/pages/splash_screen.dart';
 import '/salis/core/app_constants.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       title:
           "${AppConstants.companyHeaderName} ${AppConstants.companySubTitleName}",
       theme: AppConstants.companyTheme,
-      home: AdminPanelPage(),
+      home: const SplashScreen(),
     );
   }
 }

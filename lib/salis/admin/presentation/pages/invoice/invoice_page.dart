@@ -3,6 +3,8 @@ import '/salis/admin/presentation/pages/invoice/invoice_preview_page.dart';
 import '/salis/core/utils/helper_functions.dart';
 
 class InvoiceGenerationPage extends StatefulWidget {
+  const InvoiceGenerationPage({super.key});
+
   @override
   _InvoiceGenerationPageState createState() => _InvoiceGenerationPageState();
 }
@@ -50,10 +52,10 @@ class _InvoiceGenerationPageState extends State<InvoiceGenerationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF121212),
+      backgroundColor: const Color(0xFF121212),
       appBar: AppBar(
-        backgroundColor: Color(0xFF1E1E2E),
-        title: Text('Generate Invoice', style: TextStyle(color: Colors.white)),
+        backgroundColor: const Color(0xFF1E1E2E),
+        title: const Text('Generate Invoice', style: TextStyle(color: Colors.white)),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -69,40 +71,40 @@ class _InvoiceGenerationPageState extends State<InvoiceGenerationPage> {
                     controller: _customerNameController,
                     hint: 'Enter customer name',
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   _buildInputField(
                     label: 'Property Details',
                     controller: _propertyDetailsController,
                     hint: 'Enter property details',
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   _buildInputField(
                     label: 'Amount',
                     controller: _amountController,
                     hint: 'Enter transaction amount',
                     keyboardType: TextInputType.number,
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   _buildInputField(
                     label: 'Invoice Date',
                     controller: _invoiceDateController,
                     hint: 'Enter invoice date (e.g., 2024-12-10)',
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   _buildInputField(
                     label: 'Payment Method',
                     controller: _paymentMethodController,
                     hint: 'Enter payment method (e.g., Mastercard)',
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Center(
                     child: ElevatedButton(
                       onPressed: HelperFunctions.routeReplacdTo(
-                          InvoicePage(), context),
-                      child: Text('Generate Invoice'),
+                          const InvoicePage(), context),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                       ),
+                      child: Text('Generate Invoice'),
                     ),
                   ),
                 ],
@@ -124,17 +126,17 @@ class _InvoiceGenerationPageState extends State<InvoiceGenerationPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: TextStyle(color: Colors.white, fontSize: 16)),
-        SizedBox(height: 8),
+        Text(label, style: const TextStyle(color: Colors.white, fontSize: 16)),
+        const SizedBox(height: 8),
         TextFormField(
           controller: controller,
           keyboardType: keyboardType,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: TextStyle(color: Colors.white54),
+            hintStyle: const TextStyle(color: Colors.white54),
             filled: true,
-            fillColor: Color(0xFF1E1E2E),
+            fillColor: const Color(0xFF1E1E2E),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide.none,
@@ -154,39 +156,39 @@ class _InvoiceGenerationPageState extends State<InvoiceGenerationPage> {
   Widget _buildInvoicePreview() {
     return Card(
       margin: const EdgeInsets.only(top: 24),
-      color: Color(0xFF1E1E2E),
+      color: const Color(0xFF1E1E2E),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Invoice Preview',
               style: TextStyle(
                   color: Colors.green,
                   fontSize: 20,
                   fontWeight: FontWeight.bold),
             ),
-            Divider(color: Colors.white70),
+            const Divider(color: Colors.white70),
             ..._invoiceData.entries.map(
               (entry) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4.0),
                 child: Text(
                   '${entry.key}: ${entry.value}',
-                  style: TextStyle(color: Colors.white70, fontSize: 16),
+                  style: const TextStyle(color: Colors.white70, fontSize: 16),
                 ),
               ),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Center(
               child: ElevatedButton(
                 onPressed: () {
                   // Handle saving or exporting the invoice
                 },
-                child: Text('Save Invoice'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent,
                 ),
+                child: Text('Save Invoice'),
               ),
             ),
           ],

@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            SizedBox(width: 100, child: Image.asset("assets/tpumpyLogo.png")),
+            SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
             Text(
               //assets/tpumpyLogo.png
               "Login",

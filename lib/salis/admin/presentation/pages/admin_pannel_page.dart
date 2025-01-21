@@ -108,7 +108,7 @@ class _AdminPanelPageState extends State<AdminPanelPage> {
             ),
           ),
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
             onPressed: () {
               // Settings action
             },
@@ -140,7 +140,7 @@ class _AdminPanelPageState extends State<AdminPanelPage> {
 class AdminSideMenu extends StatelessWidget {
   final Function(Widget) onNavigate;
 
-  const AdminSideMenu({required this.onNavigate});
+  const AdminSideMenu({super.key, required this.onNavigate});
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +181,7 @@ class AdminSideMenu extends StatelessWidget {
             leading: const Icon(Icons.dashboard, color: Colors.white),
             title:
                 const Text('Dashboard', style: TextStyle(color: Colors.white)),
-            onTap: () => onNavigate(AdminDashboard()),
+            onTap: () => onNavigate(const AdminDashboard()),
           ),
           ListTile(
             leading: const Icon(Icons.home, color: Colors.white),
@@ -203,7 +203,7 @@ class AdminSideMenu extends StatelessWidget {
             leading: const Icon(Icons.notifications, color: Colors.white),
             title: const Text('Notifications',
                 style: TextStyle(color: Colors.white)),
-            onTap: () => onNavigate(CustomerListPage()),
+            onTap: () => onNavigate(const CustomerListPage()),
           ),
           ListTile(
             leading:
@@ -219,12 +219,12 @@ class AdminSideMenu extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.donut_large, color: Colors.white),
-            title: Text('Transactions', style: TextStyle(color: Colors.white)),
+            title: const Text('Transactions', style: TextStyle(color: Colors.white)),
             onTap: () => onNavigate(TransactionsPage()),
           ),
           ListTile(
             leading: const Icon(Icons.book, color: Colors.white),
-            title: Text('Invoice', style: TextStyle(color: Colors.white)),
+            title: const Text('Invoice', style: TextStyle(color: Colors.white)),
             onTap: () => onNavigate(InvoiceGenerationPage()),
           ),
         ],

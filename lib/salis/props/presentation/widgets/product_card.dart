@@ -144,10 +144,10 @@ class _ProductCardState extends State<ProductCard> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Icon(Icons.donut_large),
-                          Text(
+                          const Icon(Icons.donut_large),
+                          const Text(
                             "INST.||",
-                            style: const TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           const Icon(
                             Icons.attach_money_rounded,
@@ -191,7 +191,7 @@ class _ProductCardState extends State<ProductCard> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(Icons.add_chart_sharp),
+                              const Icon(Icons.add_chart_sharp),
                               const Icon(
                                 Icons.attach_money_rounded,
                                 color: Colors.green,
@@ -213,16 +213,16 @@ class _ProductCardState extends State<ProductCard> {
                               const SizedBox(width: 10),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Divider(
+                          const Divider(
                             thickness: .5,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: MediaQuery.of(context).size.width * .8,
                                 child:
                                     PoolProgressBar(property: widget.property),
@@ -261,7 +261,7 @@ class _ProductCardState extends State<ProductCard> {
                         ],
                       ),
             const SizedBox(height: 10),
-            Divider(
+            const Divider(
               thickness: .5,
             ),
             Row(

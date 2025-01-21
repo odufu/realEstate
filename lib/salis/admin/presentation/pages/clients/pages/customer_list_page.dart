@@ -38,11 +38,11 @@ class _CustomerListPageState extends State<CustomerListPage> {
             },
           ),
           IconButton(
-            icon: Icon(Icons.notifications),
+            icon: const Icon(Icons.notifications),
             onPressed: () {},
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
               backgroundImage: AssetImage('assets/profile.png'),
             ),
@@ -56,7 +56,7 @@ class _CustomerListPageState extends State<CustomerListPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'All Customer List',
                   style: TextStyle(
                     fontSize: 20,
@@ -88,7 +88,7 @@ class _CustomerListPageState extends State<CustomerListPage> {
                         return CustomerListItem();
                       },
                     )
-                  : GridClientPage()),
+                  : const GridClientPage()),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -96,34 +96,34 @@ class _CustomerListPageState extends State<CustomerListPage> {
               children: [
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Previous',
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     '1',
                     style: TextStyle(color: Colors.purple),
                   ),
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     '2',
                   ),
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     '3',
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Next',
                   ),
                 ),
@@ -138,6 +138,8 @@ class _CustomerListPageState extends State<CustomerListPage> {
 }
 
 class CustomerListItem extends StatelessWidget {
+  const CustomerListItem({super.key});
+
   @override
   Widget build(BuildContext context) {
     bool isMobile = MediaQuery.of(context).size.width < 600;
@@ -154,11 +156,11 @@ class CustomerListItem extends StatelessWidget {
             value: false,
             onChanged: (value) {},
           ),
-          CircleAvatar(
+          const CircleAvatar(
             backgroundImage: AssetImage('assets/profile.png'),
           ),
-          SizedBox(width: 10),
-          Expanded(
+          const SizedBox(width: 10),
+          const Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -175,7 +177,7 @@ class CustomerListItem extends StatelessWidget {
             ),
           ),
           if (!isMobile)
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -189,7 +191,7 @@ class CustomerListItem extends StatelessWidget {
               ],
             ),
           IconButton(
-            icon: Icon(Icons.visibility, color: Colors.grey),
+            icon: const Icon(Icons.visibility, color: Colors.grey),
             onPressed: () {
               Navigator.push(
                   context,
@@ -198,7 +200,7 @@ class CustomerListItem extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: Icon(Icons.edit, color: Colors.purple),
+            icon: const Icon(Icons.edit, color: Colors.purple),
             onPressed: () {
               Navigator.push(
                   context,
@@ -207,7 +209,7 @@ class CustomerListItem extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: Icon(Icons.delete, color: Colors.red),
+            icon: const Icon(Icons.delete, color: Colors.red),
             onPressed: () {
               Navigator.push(
                   context,
