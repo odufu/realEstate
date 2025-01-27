@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:realestate/salis/admin/auth/presentation/pages/admin_splash_screen.dart';
+import 'package:realestate/salis/admin/presentation/pages/dashboard/admin_dashboard.dart';
 import '/salis/admin/presentation/pages/admin_pannel_page.dart';
 import '/salis/auth/presentation/pages/splash_screen.dart';
 import '/salis/core/app_constants.dart';

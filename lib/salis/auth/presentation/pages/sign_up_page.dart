@@ -19,7 +19,7 @@ class SignUpPage extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            SizedBox(width: 100, child: Image.asset("assets/tpumpyLogo.png")),
+            SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
             Text(
               "Sign Up",
               style: TextStyle(
@@ -62,7 +62,9 @@ class SignUpPage extends StatelessWidget {
                           Theme.of(context).colorScheme.surface.withOpacity(.1),
                       textColor:
                           Theme.of(context).colorScheme.surface.withOpacity(1),
-                      onPress: () {})
+                      onPress: () {
+                        HelperFunctions.routePushTo(LoginPage(), context);
+                      })
                 ],
               ),
             ),
@@ -78,9 +80,9 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                GestureDetector(
-                  onTap: () {
-                    HelperFunctions.routeReplacdTo(const LoginPage(), context);
+                TextButton(
+                  onPressed: () {
+                    HelperFunctions.routePushNormalTo(LoginPage(), context);
                   },
                   child: const Text(
                     "LOGIN",

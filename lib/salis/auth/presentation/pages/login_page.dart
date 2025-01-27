@@ -75,9 +75,9 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                GestureDetector(
-                  onTap: () {
-                    HelperFunctions.routeReplacdTo(const SignUpPage(), context);
+                TextButton(
+                  onPressed: () {
+                    HelperFunctions.routePushNormalTo(SignUpPage(), context);
                   },
                   child: const Text(
                     "SIGN UP",
