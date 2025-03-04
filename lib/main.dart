@@ -15,7 +15,7 @@ import '/salis/core/theme/salis_mode.dart';
 //TEST MAIN
 void main() {
   runApp(
-    DevicePreview(builder: (context) => MyApp()), // Wrap your app
+    MyApp(), // Wrap your app
   );
 }
 
@@ -26,13 +26,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      useInheritedMediaQuery: true,
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
+      // useInheritedMediaQuery: true,
+      // locale: DevicePreview.locale(context),
+      // builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       title:
           "${AppConstants.companyHeaderName} ${AppConstants.companySubTitleName}",
-      theme: AppConstants.companyTheme,
+      // theme: AppConstants.companyTheme,
       home: const SplashScreen(),
     );
   }
