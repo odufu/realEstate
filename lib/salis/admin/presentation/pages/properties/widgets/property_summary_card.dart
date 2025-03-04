@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SummaryCard extends StatelessWidget {
-  const SummaryCard({super.key});
+  const SummaryCard();
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,6 @@ class IncomeWidget extends StatelessWidget {
   final IconData icon;
 
   const IncomeWidget({
-    super.key,
     required this.totalIncome,
     required this.percentageChange,
     required this.icon,

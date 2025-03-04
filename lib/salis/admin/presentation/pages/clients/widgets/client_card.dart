@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ClientCard extends StatelessWidget {
-  const ClientCard({super.key});
+  const ClientCard();
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +40,8 @@ class ClientCard extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
                         Container(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(
                             color: Colors.green,
                             borderRadius: BorderRadius.circular(8),

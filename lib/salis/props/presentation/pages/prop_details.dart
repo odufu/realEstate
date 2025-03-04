@@ -19,7 +19,6 @@ class PropDetails extends StatefulWidget {
   final Property property;
   const PropDetails({
     required this.property,
-    super.key,
   });
 
   @override
@@ -399,10 +398,10 @@ class _PropDetailsState extends State<PropDetails> {
                                     Row(
                                       children: [
                                         Icon(
+                                          Icons.calendar_month,
                                           color: Theme.of(context)
                                               .colorScheme
                                               .primary,
-                                          Icons.calendar_month,
                                           size: 15,
                                         ),
                                         const SizedBox(
@@ -418,8 +417,8 @@ class _PropDetailsState extends State<PropDetails> {
                                     Row(
                                       children: [
                                         const Icon(
-                                          color: Colors.green,
                                           Icons.paid,
+                                          color: Colors.green,
                                           size: 15,
                                         ),
                                         const SizedBox(
@@ -438,10 +437,10 @@ class _PropDetailsState extends State<PropDetails> {
                                     Row(
                                       children: [
                                         Icon(
+                                          Icons.payment,
                                           color: Theme.of(context)
                                               .colorScheme
                                               .primary,
-                                          Icons.payment,
                                           size: 15,
                                         ),
                                         const SizedBox(
@@ -461,10 +460,10 @@ class _PropDetailsState extends State<PropDetails> {
                                     Row(
                                       children: [
                                         Icon(
+                                          Icons.hourglass_bottom,
                                           color: Theme.of(context)
                                               .colorScheme
                                               .primary,
-                                          Icons.hourglass_bottom,
                                           size: 15,
                                         ),
                                       ],
@@ -517,10 +516,10 @@ class _PropDetailsState extends State<PropDetails> {
                                         Row(
                                           children: [
                                             Icon(
+                                              Icons.pie_chart,
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .primary,
-                                              Icons.pie_chart,
                                               size: 15,
                                             ),
                                             const SizedBox(
@@ -536,8 +535,8 @@ class _PropDetailsState extends State<PropDetails> {
                                         Row(
                                           children: [
                                             const Icon(
-                                              color: Colors.green,
                                               Icons.paid,
+                                              color: Colors.green,
                                               size: 15,
                                             ),
                                             const SizedBox(
@@ -557,10 +556,10 @@ class _PropDetailsState extends State<PropDetails> {
                                         Row(
                                           children: [
                                             Icon(
+                                              Icons.payment,
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .primary,
-                                              Icons.payment,
                                               size: 15,
                                             ),
                                             const SizedBox(
@@ -580,10 +579,10 @@ class _PropDetailsState extends State<PropDetails> {
                                         Row(
                                           children: [
                                             Icon(
+                                              Icons.hourglass_bottom,
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .primary,
-                                              Icons.hourglass_bottom,
                                               size: 15,
                                             ),
                                             const SizedBox(
@@ -642,8 +641,8 @@ class _PropDetailsState extends State<PropDetails> {
                                         Row(
                                           children: [
                                             const Icon(
-                                              color: Colors.green,
                                               Icons.paid,
+                                              color: Colors.green,
                                               size: 15,
                                             ),
                                             const SizedBox(

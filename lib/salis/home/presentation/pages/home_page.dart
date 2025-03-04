@@ -11,7 +11,9 @@ import '../../../notification/presentation/pages/notification_drawer.dart';
 class HomePage extends StatefulWidget {
   int? initialIndex;
 
-  HomePage({this.initialIndex, super.key});
+  HomePage({
+    this.initialIndex,
+  });
   @override
   State<HomePage> createState() => _HomePageState();
 }

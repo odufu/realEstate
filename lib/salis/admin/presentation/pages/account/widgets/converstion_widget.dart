@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart'; // Add this dependency in pubspec.yaml
 
 class ConversionsWidget extends StatelessWidget {
-  const ConversionsWidget({super.key});
+  const ConversionsWidget();
 
   @override
   Widget build(BuildContext context) {

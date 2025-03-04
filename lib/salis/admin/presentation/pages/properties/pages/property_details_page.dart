@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PropertyDetailsPage extends StatelessWidget {
-  const PropertyDetailsPage({super.key});
+  const PropertyDetailsPage();
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +87,7 @@ class PropertyDetailsPage extends StatelessWidget {
 }
 
 class PropertyOwnerCard extends StatelessWidget {
-  const PropertyOwnerCard({super.key});
+  const PropertyOwnerCard();
 
   @override
   Widget build(BuildContext context) {
@@ -137,7 +137,8 @@ class PropertyOwnerCard extends StatelessWidget {
                 onPressed: () {},
               ),
               IconButton(
-                icon: const Icon(FontAwesomeIcons.whatsapp, color: Colors.green),
+                icon:
+                    const Icon(FontAwesomeIcons.whatsapp, color: Colors.green),
                 onPressed: () {},
               ),
             ],
@@ -209,7 +210,7 @@ class PropertyOwnerCard extends StatelessWidget {
 
 // Schedule a Tour Form
 class ScheduleTourForm extends StatelessWidget {
-  const ScheduleTourForm({super.key});
+  const ScheduleTourForm();
 
   @override
   Widget build(BuildContext context) {
@@ -255,7 +256,7 @@ class ScheduleTourForm extends StatelessWidget {
 
 // Property Image Card
 class PropertyImageCard extends StatelessWidget {
-  const PropertyImageCard({super.key});
+  const PropertyImageCard();
 
   @override
   Widget build(BuildContext context) {
@@ -280,7 +281,8 @@ class PropertyImageCard extends StatelessWidget {
               color: Colors.orange,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: const Text('For Sale', style: TextStyle(color: Colors.white)),
+            child:
+                const Text('For Sale', style: TextStyle(color: Colors.white)),
           ),
         ),
       ],
@@ -289,7 +291,7 @@ class PropertyImageCard extends StatelessWidget {
 }
 
 class PropertyDetails extends StatelessWidget {
-  const PropertyDetails({super.key});
+  const PropertyDetails();
 
   @override
   Widget build(BuildContext context) {

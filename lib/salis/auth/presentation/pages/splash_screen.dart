@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'welcome_page.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen();
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -29,26 +29,27 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
+              SizedBox(
+                  width: 200, child: Image.asset("assets/mcdreamslogo.png")),
               //assets/tpupylogo.png
-              const SizedBox(
-                height: 60,
-              ),
-              Text(
-                "DEKOL",
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w100,
-                    letterSpacing: 10,
-                    color: Theme.of(context).colorScheme.surface),
-              ),
-              Text(
-                "HOMES",
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.surface),
-              ),
+              // const SizedBox(
+              //   height: 60,
+              // ),
+              // Text(
+              //   "MCDREAM",
+              //   style: TextStyle(
+              //       fontSize: 30,
+              //       fontWeight: FontWeight.w100,
+              //       letterSpacing: 10,
+              //       color: Theme.of(context).colorScheme.surface),
+              // ),
+              // Text(
+              //   "HOMES",
+              //   style: TextStyle(
+              //       fontSize: 30,
+              //       fontWeight: FontWeight.bold,
+              //       color: Theme.of(context).colorScheme.surface),
+              // ),
               const SizedBox(
                 height: 5,
               ),

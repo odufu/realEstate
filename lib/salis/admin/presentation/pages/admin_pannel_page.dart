@@ -14,7 +14,6 @@ class AdminPanelPage extends StatefulWidget {
   final Widget? entryPage;
   const AdminPanelPage({
     this.entryPage,
-    super.key,
   });
 
   @override
@@ -140,7 +139,7 @@ class _AdminPanelPageState extends State<AdminPanelPage> {
 class AdminSideMenu extends StatelessWidget {
   final Function(Widget) onNavigate;
 
-  const AdminSideMenu({super.key, required this.onNavigate});
+  const AdminSideMenu({required this.onNavigate});
 
   @override
   Widget build(BuildContext context) {
@@ -219,7 +218,8 @@ class AdminSideMenu extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.donut_large, color: Colors.white),
-            title: const Text('Transactions', style: TextStyle(color: Colors.white)),
+            title: const Text('Transactions',
+                style: TextStyle(color: Colors.white)),
             onTap: () => onNavigate(TransactionsPage()),
           ),
           ListTile(

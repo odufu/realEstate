@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart'; // Import for date formatting
 
 class TransactionsPage extends StatelessWidget {
-  const TransactionsPage({super.key});
+  const TransactionsPage();
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +31,10 @@ class TransactionsPage extends StatelessWidget {
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: DataTable(
-            headingRowColor:
-                WidgetStateColor.resolveWith((states) => const Color(0xFF1E1E2E)),
-            dataRowColor:
-                WidgetStateColor.resolveWith((states) => const Color(0xFF1E1E2E)),
+            headingRowColor: WidgetStateColor.resolveWith(
+                (states) => const Color(0xFF1E1E2E)),
+            dataRowColor: WidgetStateColor.resolveWith(
+                (states) => const Color(0xFF1E1E2E)),
             headingTextStyle: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -166,7 +166,7 @@ class TransactionsPage extends StatelessWidget {
 class TransactionDetailsPage extends StatelessWidget {
   final Map<String, dynamic> transaction;
 
-  const TransactionDetailsPage({super.key, required this.transaction});
+  const TransactionDetailsPage({required this.transaction});
 
   @override
   Widget build(BuildContext context) {

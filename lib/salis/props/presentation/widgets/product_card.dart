@@ -14,7 +14,6 @@ class ProductCard extends StatefulWidget {
 
   const ProductCard({
     required this.property,
-    super.key,
   });
 
   @override

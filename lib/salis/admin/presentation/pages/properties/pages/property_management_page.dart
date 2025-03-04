@@ -14,7 +14,7 @@ import '../widgets/property_card.dart';
 import '../widgets/property_summary_card.dart';
 
 class PropertyManagementPage extends StatefulWidget {
-  const PropertyManagementPage({super.key});
+  const PropertyManagementPage();
 
   @override
   _PropertyManagementPageState createState() => _PropertyManagementPageState();
@@ -128,7 +128,7 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
     setState(() {
       _images = pickedFiles.map((file) => File(file.path)).toList();
     });
-    }
+  }
 
   Future<void> _pickVideo() async {
     final pickedFile = await _picker.pickVideo(source: ImageSource.gallery);
@@ -212,7 +212,8 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                          decoration: const InputDecoration(labelText: 'Bedrooms'),
+                          decoration:
+                              const InputDecoration(labelText: 'Bedrooms'),
                           keyboardType: TextInputType.number,
                           initialValue: _bedrooms.toString(),
                           onChanged: (value) => _bedrooms = int.parse(value),
@@ -221,7 +222,8 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: TextFormField(
-                          decoration: const InputDecoration(labelText: 'Bathrooms'),
+                          decoration:
+                              const InputDecoration(labelText: 'Bathrooms'),
                           keyboardType: TextInputType.number,
                           initialValue: _bathrooms.toString(),
                           onChanged: (value) => _bathrooms = int.parse(value),
@@ -231,7 +233,8 @@ class _PropertyManagementPageState extends State<PropertyManagementPage> {
                   ),
                   DropdownButtonFormField<String>(
                     value: _paymentPlan,
-                    decoration: const InputDecoration(labelText: 'Payment Plan'),
+                    decoration:
+                        const InputDecoration(labelText: 'Payment Plan'),
                     items: ['outright', 'installment', 'coownership']
                         .map((plan) =>
                             DropdownMenuItem(value: plan, child: Text(plan)))

@@ -12,7 +12,6 @@ class CoOwnershipPaymentSummaryPage extends StatefulWidget {
 
   const CoOwnershipPaymentSummaryPage({
     required this.property,
-    super.key,
   });
 
   @override
@@ -87,8 +86,8 @@ class _CoOwnershipPaymentSummaryPageState
                         Row(
                           children: [
                             const Icon(
-                              color: Colors.green,
                               Icons.paid,
+                              color: Colors.green,
                               size: 15,
                             ),
                             const SizedBox(
@@ -107,8 +106,8 @@ class _CoOwnershipPaymentSummaryPageState
                         Row(
                           children: [
                             Icon(
-                              color: Theme.of(context).colorScheme.primary,
                               Icons.payment,
+                              color: Theme.of(context).colorScheme.primary,
                               size: 15,
                             ),
                             const SizedBox(
@@ -128,8 +127,8 @@ class _CoOwnershipPaymentSummaryPageState
                         Row(
                           children: [
                             Icon(
-                              color: Theme.of(context).colorScheme.primary,
                               Icons.hourglass_bottom,
+                              color: Theme.of(context).colorScheme.primary,
                               size: 15,
                             ),
                             const SizedBox(

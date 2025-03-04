@@ -3,7 +3,7 @@ import '/salis/admin/presentation/pages/invoice/invoice_preview_page.dart';
 import '/salis/core/utils/helper_functions.dart';
 
 class InvoiceGenerationPage extends StatefulWidget {
-  const InvoiceGenerationPage({super.key});
+  const InvoiceGenerationPage();
 
   @override
   _InvoiceGenerationPageState createState() => _InvoiceGenerationPageState();
@@ -55,7 +55,8 @@ class _InvoiceGenerationPageState extends State<InvoiceGenerationPage> {
       backgroundColor: const Color(0xFF121212),
       appBar: AppBar(
         backgroundColor: const Color(0xFF1E1E2E),
-        title: const Text('Generate Invoice', style: TextStyle(color: Colors.white)),
+        title: const Text('Generate Invoice',
+            style: TextStyle(color: Colors.white)),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

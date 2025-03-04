@@ -7,14 +7,14 @@ import 'package:printing/printing.dart';
 import 'package:file_picker/file_picker.dart';
 
 class InvoicePage extends StatelessWidget {
-  const InvoicePage({super.key});
+  const InvoicePage();
 
   // Function to generate PDF
   Future<Uint8List> _generateInvoice() async {
     final pdf = pw.Document();
 
     final logo =
-        await imageFromAssetBundle('assets/dekolhome.png'); // Your logo path
+        await imageFromAssetBundle('assets/mcdreamslogo.png'); // Your logo path
 
     pdf.addPage(
       pw.Page(
@@ -32,7 +32,7 @@ class InvoicePage extends StatelessWidget {
                     crossAxisAlignment: pw.CrossAxisAlignment.start,
                     children: [
                       pw.Image(logo, width: 50),
-                      pw.Text("DEKOL HOMES & PROPERTIES LTD.",
+                      pw.Text("MCDREAM HOMES & PROPERTIES LTD.",
                           style: pw.TextStyle(
                               fontSize: 14, fontWeight: pw.FontWeight.bold)),
                       pw.Text("Empowering Dreams & Inspiring Futures",
@@ -56,7 +56,8 @@ class InvoicePage extends StatelessWidget {
               // Table
               // ignore: deprecated_member_use
               pw.Table.fromTextArray(
-                headerDecoration: const pw.BoxDecoration(color: PdfColors.deepPurple),
+                headerDecoration:
+                    const pw.BoxDecoration(color: PdfColors.deepPurple),
                 headerStyle: pw.TextStyle(
                     color: PdfColors.white, fontWeight: pw.FontWeight.bold),
                 headers: ["Property Description", "Qty", "Price", "Total"],

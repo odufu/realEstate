@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AddPropertyPage extends StatefulWidget {
-  const AddPropertyPage({super.key});
+  const AddPropertyPage();
 
   @override
   _AddPropertyPageState createState() => _AddPropertyPageState();
@@ -110,8 +110,9 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                           itemCount: _selectedImages.length,
                                           itemBuilder: (context, index) {
                                             return Container(
-                                              margin: const EdgeInsets.symmetric(
-                                                  horizontal: 4.0),
+                                              margin:
+                                                  const EdgeInsets.symmetric(
+                                                      horizontal: 4.0),
                                               decoration: BoxDecoration(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
@@ -155,8 +156,8 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                                   _selectedImages.length;
                                           _pageController.animateToPage(
                                             previousPage,
-                                            duration:
-                                                const Duration(milliseconds: 300),
+                                            duration: const Duration(
+                                                milliseconds: 300),
                                             curve: Curves.easeInOut,
                                           );
                                         },
@@ -168,7 +169,8 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                       top: 0,
                                       bottom: 0,
                                       child: IconButton(
-                                        icon: const Icon(Icons.arrow_forward_ios,
+                                        icon: const Icon(
+                                            Icons.arrow_forward_ios,
                                             color: Colors.white),
                                         onPressed: () {
                                           int nextPage =
@@ -177,8 +179,8 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                                   _selectedImages.length;
                                           _pageController.animateToPage(
                                             nextPage,
-                                            duration:
-                                                const Duration(milliseconds: 300),
+                                            duration: const Duration(
+                                                milliseconds: 300),
                                             curve: Curves.easeInOut,
                                           );
                                         },
@@ -203,8 +205,8 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                               _propertyAddress.isEmpty
                                   ? 'Address'
                                   : _propertyAddress,
-                              style:
-                                  const TextStyle(color: Colors.grey, fontSize: 14.0),
+                              style: const TextStyle(
+                                  color: Colors.grey, fontSize: 14.0),
                             ),
                             const SizedBox(height: 8.0),
                             Text(
@@ -280,7 +282,8 @@ class _AddPropertyPageState extends State<AddPropertyPage> {
                                 setState(() => _propertyName = value),
                           ),
                           PropertyFormField(
-                            prefixIcon: const Icon(FontAwesomeIcons.locationDot),
+                            prefixIcon:
+                                const Icon(FontAwesomeIcons.locationDot),
                             hintText: 'Address',
                             label: 'Address',
                             onChanged: (value) =>
@@ -336,7 +339,7 @@ class InfoChip extends StatelessWidget {
   final IconData icon;
   final String label;
 
-  const InfoChip({super.key, required this.icon, required this.label});
+  const InfoChip({required this.icon, required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -360,7 +363,7 @@ class PropertyFormField extends StatelessWidget {
   final Function(String)? onChanged;
 
   const PropertyFormField(
-      {super.key, required this.hintText,
+      {required this.hintText,
       required this.label,
       this.prefixIcon,
       this.onChanged});

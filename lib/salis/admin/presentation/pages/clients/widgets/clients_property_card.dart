@@ -10,7 +10,7 @@ class ClientsPropertyCard extends StatelessWidget {
   final double progressValue;
   final Color progressColor;
 
-  const ClientsPropertyCard({super.key, 
+  const ClientsPropertyCard({
     required this.icon,
     required this.iconColor,
     required this.title,
@@ -109,7 +109,7 @@ class ClientsPropertyCard extends StatelessWidget {
 }
 
 class ClientsPropertyCardWidget extends StatelessWidget {
-  const ClientsPropertyCardWidget({super.key});
+  const ClientsPropertyCardWidget();
 
   @override
   Widget build(BuildContext context) {

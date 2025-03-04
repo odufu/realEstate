@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'widgets/my_props_card.dart';
 
 class MyProps extends StatefulWidget {
-  const MyProps({super.key});
+  const MyProps();
 
   @override
   State<MyProps> createState() => _MyPropsState();

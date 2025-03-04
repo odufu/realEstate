@@ -107,7 +107,7 @@ List<Property> myProperties = [
       details:
           "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
       price: 2000000,
-      address: "T-Pumpy Court, Gwagwalada, central area",
+      address: "MC Dream Court, Gwagwalada, central area",
       cartegory: Cartegory.homes,
       images: [
         "assets/images/props4.jpg",
@@ -145,7 +145,7 @@ List<Property> myProperties = [
       details:
           "Immerse yourself in luxury with this mordern apartment featuring spacious rooms, top-notch amenities, and breathtaking views. Ideal for those seeking a blend of comfort and sophistication",
       price: 70000000,
-      address: "T-Pumpy Court, Gwagwalada, central area",
+      address: "MC Dream Court, Gwagwalada, central area",
       cartegory: Cartegory.homes,
       images: [
         "assets/images/props16.jpg",
@@ -178,7 +178,7 @@ List<Property> myProperties = [
       details:
           "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
       price: 2000000,
-      address: "T-Pumpy Court, Gwagwalada, central area",
+      address: "MC Dream Court, Gwagwalada, central area",
       cartegory: Cartegory.homes,
       images: [
         "assets/images/props4.jpg",
@@ -212,11 +212,11 @@ List<Property> myProperties = [
       )),
   Property(
     id: "4",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -251,7 +251,7 @@ List<Property> myProperties = [
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -287,11 +287,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "6",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -326,7 +326,7 @@ List<Property> myProperties = [
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -361,7 +361,7 @@ List<Property> myProperties = [
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -392,11 +392,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "9",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -427,11 +427,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "10",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -462,11 +462,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "11",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -497,11 +497,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "13",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -532,11 +532,11 @@ List<Property> myProperties = [
   ),
   Property(
     id: "14",
-    title: "T-Pumpy Homes Stead",
+    title: "MC Dream Homes Stead",
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 2000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -573,7 +573,7 @@ List<Property> newProperties = [
       title: "2-Bed Flat, Appartment",
       details: "The best of all mindset of reliability and maximum comfort",
       price: 20000000,
-      address: "T-Pumpy Court, Gwagwalada, central area",
+      address: "MC Dream Court, Gwagwalada, central area",
       cartegory: Cartegory.homes,
       images: [
         "assets/images/props2.jpg",
@@ -611,7 +611,7 @@ List<Property> newProperties = [
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 45000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -645,7 +645,7 @@ List<Property> newProperties = [
     details:
         "Super sliked and engeneered with the mindset of reliability and maximum comfort",
     price: 34000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props3.jpg",
@@ -684,7 +684,7 @@ List<Property> newProperties = [
       title: "2-Bed Flat, Appartment",
       details: "The best of all mindset of reliability and maximum comfort",
       price: 20000000,
-      address: "T-Pumpy Court, Gwagwalada, central area",
+      address: "MC Dream Court, Gwagwalada, central area",
       cartegory: Cartegory.homes,
       images: [
         "assets/images/props2.jpg",
@@ -722,7 +722,7 @@ List<Property> newProperties = [
     details:
         "The very best of comfort in homes as engeneered with the mindset of reliability and maximum comfort",
     price: 45000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props4.jpg",
@@ -756,7 +756,7 @@ List<Property> newProperties = [
     details:
         "Super sliked and engeneered with the mindset of reliability and maximum comfort",
     price: 34000000,
-    address: "T-Pumpy Court, Gwagwalada, central area",
+    address: "MC Dream Court, Gwagwalada, central area",
     cartegory: Cartegory.homes,
     images: [
       "assets/images/props3.jpg",

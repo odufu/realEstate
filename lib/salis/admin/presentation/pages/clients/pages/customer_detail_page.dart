@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomerDetailsPage extends StatelessWidget {
-  const CustomerDetailsPage({super.key});
+  const CustomerDetailsPage();
 
   @override
   Widget build(BuildContext context) {
@@ -239,7 +239,11 @@ class InfoCard extends StatelessWidget {
   final String subtitle;
   final int value;
 
-  const InfoCard(this.title, this.subtitle, this.value, {super.key});
+  const InfoCard(
+    this.title,
+    this.subtitle,
+    this.value,
+  );
 
   @override
   Widget build(BuildContext context) {

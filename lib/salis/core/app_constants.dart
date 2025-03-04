@@ -9,27 +9,27 @@ class AppConstants {
 }
 
 CompanyProfile salis = CompanyProfile(
-  companyName: "Salis Homes",
-  companySubTitle: "HOMES",
-  logo: "assets/rounded logo.png",
+  companyName: "MC DREAM",
+  companySubTitle: "",
+  logo: "assets/mcdreamslogo.png",
   primaryColor: Colors.red,
   secondaryColor: Colors.orangeAccent,
   tertiaryColor: Colors.black,
 );
 
 CompanyProfile tpumpy = CompanyProfile(
-  companyName: "Salis Homes",
+  companyName: "MC DREAM",
   companySubTitle: "HOMES",
-  logo: "logo",
+  logo: "assets/mcdreamslogo.png",
   primaryColor: Colors.red,
   secondaryColor: Colors.orangeAccent,
   tertiaryColor: Colors.black,
 );
 
 CompanyProfile decolHomes = CompanyProfile(
-  companyName: "Salis Homes",
+  companyName: "MC DREAM",
   companySubTitle: "HOMES",
-  logo: "logo",
+  logo: "assets/mcdreamslogo.png",
   primaryColor: Colors.red,
   secondaryColor: Colors.orangeAccent,
   tertiaryColor: Colors.black,

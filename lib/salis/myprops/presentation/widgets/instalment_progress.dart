@@ -6,7 +6,6 @@ class InstallmentProgress extends StatelessWidget {
   const InstallmentProgress({
     required this.paid,
     required this.total,
-    super.key,
   });
 
   @override

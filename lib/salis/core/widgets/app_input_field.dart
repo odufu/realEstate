@@ -14,7 +14,6 @@ class AppInputField extends StatelessWidget {
     this.textColor,
     this.backgroundColor,
     required this.hint,
-    super.key,
   });
 
   @override
@@ -44,8 +43,8 @@ class AppInputField extends StatelessWidget {
                 cursorHeight: 15,
                 decoration: InputDecoration(
                     label: Text(
-                  style: const TextStyle(fontWeight: FontWeight.w100),
                   hint,
+                  style: const TextStyle(fontWeight: FontWeight.w100),
                 )),
               ),
             ),

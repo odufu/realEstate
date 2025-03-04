@@ -7,7 +7,6 @@ class MyProductCard extends StatefulWidget {
   final Property property;
   const MyProductCard({
     required this.property,
-    super.key,
   });
 
   @override

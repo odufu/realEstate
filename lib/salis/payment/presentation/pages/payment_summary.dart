@@ -8,8 +8,10 @@ class PaymentSummary extends StatelessWidget {
   final Property property;
   final double payment;
 
-  const PaymentSummary(
-      {required this.payment, required this.property, super.key});
+  const PaymentSummary({
+    required this.payment,
+    required this.property,
+  });
 
   @override
   Widget build(BuildContext context) {

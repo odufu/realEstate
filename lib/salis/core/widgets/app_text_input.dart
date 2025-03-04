@@ -9,7 +9,6 @@ class AppTextInput extends StatelessWidget {
   final Widget? leadingIcon; // Add an optional leading icon
 
   AppTextInput({
-    super.key,
     required this.hintText,
     this.onChanged,
     required this.labelText,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StatsCards extends StatelessWidget {
-  const StatsCards({
-    super.key,
-  });
+  const StatsCards();
 
   @override
   Widget build(BuildContext context) {
@@ -68,8 +66,7 @@ class StatsCards extends StatelessWidget {
                       SizedBox(width: 4),
                       Text(
                         "vs last month",
-                        style:
-                            TextStyle(color: Colors.grey, fontSize: 12),
+                        style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
@@ -150,8 +147,7 @@ class StatsCards extends StatelessWidget {
                       SizedBox(width: 4),
                       Text(
                         "vs last month",
-                        style:
-                            TextStyle(color: Colors.grey, fontSize: 12),
+                        style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
@@ -232,8 +228,7 @@ class StatsCards extends StatelessWidget {
                       SizedBox(width: 4),
                       Text(
                         "vs last month",
-                        style:
-                            TextStyle(color: Colors.grey, fontSize: 12),
+                        style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),
@@ -314,8 +309,7 @@ class StatsCards extends StatelessWidget {
                       SizedBox(width: 4),
                       Text(
                         "vs last month",
-                        style:
-                            TextStyle(color: Colors.grey, fontSize: 12),
+                        style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),

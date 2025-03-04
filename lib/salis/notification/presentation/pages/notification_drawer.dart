@@ -4,7 +4,6 @@ class NotificationDrawer extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
 
   const NotificationDrawer({
-    super.key,
     required this.scaffoldKey,
   });
 

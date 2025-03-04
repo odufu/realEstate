@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DpCard extends StatelessWidget {
-  const DpCard({super.key});
+  const DpCard();
 
   @override
   Widget build(BuildContext context) {

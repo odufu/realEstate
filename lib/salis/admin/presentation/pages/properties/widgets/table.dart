@@ -6,7 +6,7 @@ import '../pages/property_details_page.dart';
 import 'stats_card_widget.dart';
 
 class ListingTablePage extends StatelessWidget {
-  const ListingTablePage({super.key});
+  const ListingTablePage();
 
   @override
   Widget build(BuildContext context) {

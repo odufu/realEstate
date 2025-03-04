@@ -9,7 +9,6 @@ class DropdownTextField extends StatelessWidget {
   final ValueChanged<String?> onChanged;
 
   const DropdownTextField({
-    super.key,
     required this.hintText,
     required this.labelText,
     required this.items,

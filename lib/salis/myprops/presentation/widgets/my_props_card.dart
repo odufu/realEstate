@@ -18,7 +18,6 @@ class MyPropsCard extends StatefulWidget {
   final Property property;
 
   const MyPropsCard({
-    super.key,
     required this.property,
   });
 

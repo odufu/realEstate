@@ -6,7 +6,7 @@ import '../../props/presentation/pages/prop_details.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+  const MyHomePage();
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     Image.asset(
-                      "assets/dekolhome.png",
+                      "assets/mcdreamslogo.png",
                       width: 40,
                     ),
                     const SizedBox(
@@ -294,7 +294,6 @@ class SessionHeader extends StatelessWidget {
   String title;
   SessionHeader({
     required this.title,
-    super.key,
   });
 
   @override

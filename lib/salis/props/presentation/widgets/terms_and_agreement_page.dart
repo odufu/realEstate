@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 class TermsAndAgreementPage extends StatelessWidget {
   final VoidCallback onAccept;
 
-  const TermsAndAgreementPage({required this.onAccept, super.key});
+  const TermsAndAgreementPage({
+    required this.onAccept,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class TermsAndAgreementPage extends StatelessWidget {
             context,
           ),
           _buildSectionDetails(
-            "The co-ownership agreement ('Agreement',context,) is entered into between [T-Pumpy Homes] and [Co-Owner(s)] for the joint ownership of the property located at [Property Address].",
+            "The co-ownership agreement ('Agreement',context,) is entered into between [MC Dream Homes] and [Co-Owner(s)] for the joint ownership of the property located at [Property Address].",
             context,
           ),
           _buildSectionHeader(

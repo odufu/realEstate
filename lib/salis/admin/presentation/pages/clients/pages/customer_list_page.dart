@@ -3,7 +3,7 @@ import '/salis/admin/presentation/pages/clients/pages/customer_detail_page.dart'
 import '/salis/admin/presentation/pages/clients/pages/grid_client_page.dart';
 
 class CustomerListPage extends StatefulWidget {
-  const CustomerListPage({super.key});
+  const CustomerListPage();
 
   @override
   State<CustomerListPage> createState() => _CustomerListPageState();
@@ -138,7 +138,7 @@ class _CustomerListPageState extends State<CustomerListPage> {
 }
 
 class CustomerListItem extends StatelessWidget {
-  const CustomerListItem({super.key});
+  const CustomerListItem();
 
   @override
   Widget build(BuildContext context) {

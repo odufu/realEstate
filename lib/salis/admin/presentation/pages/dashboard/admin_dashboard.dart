@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AdminDashboard extends StatelessWidget {
-  const AdminDashboard({super.key});
+  const AdminDashboard();
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,6 @@ class AdminFeatureCard extends StatelessWidget {
   final Color color;
 
   const AdminFeatureCard({
-    super.key,
     required this.title,
     required this.value,
     required this.icon,

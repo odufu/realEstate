@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'widgets/product_card.dart';
 
 class Property extends StatelessWidget {
-  const Property({super.key});
+  const Property();
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Property extends StatelessWidget {
               child: Row(
                 children: [
                   Image.asset(
-                    "assets/dekolhome.png",
+                    "assets/mcdreamslogo.png",
                     color: Theme.of(context).colorScheme.primary,
                     width: 40,
                   ),

@@ -12,7 +12,6 @@ class AppButton extends StatelessWidget {
     this.textColor,
     required this.text,
     required this.onPress,
-    super.key,
   });
 
   @override

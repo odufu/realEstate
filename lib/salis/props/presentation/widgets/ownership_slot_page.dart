@@ -9,7 +9,6 @@ class OwnershipSlotsPage extends StatelessWidget {
   final Property property;
   const OwnershipSlotsPage({
     required this.property,
-    super.key,
   });
 
   @override
@@ -186,7 +185,6 @@ class OwnershipSlotCard extends StatelessWidget {
     required this.date,
     this.imageUrl,
     required this.isPaid,
-    super.key,
   });
 
   @override

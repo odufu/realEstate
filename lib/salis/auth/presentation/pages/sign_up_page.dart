@@ -6,7 +6,7 @@ import '../../../core/widgets/app_input_field.dart';
 import 'login_page.dart';
 
 class SignUpPage extends StatelessWidget {
-  const SignUpPage({super.key});
+  const SignUpPage();
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class SignUpPage extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            SizedBox(width: 100, child: Image.asset("assets/dekolhome.png")),
+            SizedBox(width: 100, child: Image.asset("assets/mcdreamslogo.png")),
             Text(
               "Sign Up",
               style: TextStyle(

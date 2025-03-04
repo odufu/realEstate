@@ -6,7 +6,7 @@ import '../../props/data/property.dart';
 import 'widgets/my_product_card.dart';
 
 class Profile extends StatelessWidget {
-  const Profile({super.key});
+  const Profile();
 
   @override
   Widget build(BuildContext context) {

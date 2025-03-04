@@ -12,7 +12,6 @@ class PoolProgressBar extends StatelessWidget {
 
   const PoolProgressBar({
     required this.property,
-    super.key,
   });
 
   @override
@@ -114,7 +113,6 @@ class PoolModal extends StatelessWidget {
   const PoolModal({
     required this.property,
     required this.pool,
-    super.key,
   });
 
   @override

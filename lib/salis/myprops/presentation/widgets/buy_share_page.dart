@@ -5,7 +5,6 @@ class BuySharePage extends StatelessWidget {
   final OwnershipPool pool;
   const BuySharePage({
     required this.pool,
-    super.key,
   });
 
   @override

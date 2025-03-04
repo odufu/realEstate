@@ -12,7 +12,6 @@ class PropertyCard extends StatefulWidget {
 
   const PropertyCard({
     required this.property,
-    super.key,
   });
 
   @override
@@ -139,8 +138,8 @@ class _PropertyCardState extends State<PropertyCard> {
                           color: Colors.green.withOpacity(.5),
                           borderRadius: BorderRadius.circular(5)),
                       child: const Text(
-                        textAlign: TextAlign.center,
                         "Sale",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.white),
                       )),
@@ -287,11 +286,11 @@ class FeatureWidget extends StatelessWidget {
   final IconData icon;
   final String title;
   final String value;
-  const FeatureWidget(
-      {required this.icon,
-      required this.title,
-      required this.value,
-      super.key});
+  const FeatureWidget({
+    required this.icon,
+    required this.title,
+    required this.value,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -313,8 +312,8 @@ class FeatureWidget extends StatelessWidget {
             width: 4,
           ),
           Text(
-            textAlign: TextAlign.start,
             value,
+            textAlign: TextAlign.start,
             style: const TextStyle(fontSize: 14),
           ),
           const SizedBox(

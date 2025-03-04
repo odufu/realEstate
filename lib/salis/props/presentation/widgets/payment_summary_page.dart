@@ -3,7 +3,7 @@ import '../../../home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class PaymentSummaryPage extends StatelessWidget {
-  const PaymentSummaryPage({super.key});
+  const PaymentSummaryPage();
 
   @override
   Widget build(BuildContext context) {

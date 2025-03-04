@@ -20,7 +20,6 @@ class InstalmentPlanSelectionPage extends StatefulWidget {
     required this.closingPeriod,
     required this.property,
     required this.minInitialPayment,
-    super.key,
   });
 
   @override

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/salis/admin/presentation/pages/clients/widgets/client_card.dart';
 
 class GridClientPage extends StatelessWidget {
-  const GridClientPage({super.key});
+  const GridClientPage();
 
   @override
   Widget build(BuildContext context) {

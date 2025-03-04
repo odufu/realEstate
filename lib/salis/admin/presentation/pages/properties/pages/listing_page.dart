@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/table.dart';
 
 class ListingPage extends StatelessWidget {
-  const ListingPage({super.key});
+  const ListingPage();
 
   @override
   Widget build(BuildContext context) {
