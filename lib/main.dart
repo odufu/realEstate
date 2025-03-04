@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title:
           "${AppConstants.companyHeaderName} ${AppConstants.companySubTitleName}",
-      // theme: AppConstants.companyTheme,
+      theme: AppConstants.companyTheme,
       home: const SplashScreen(),
     );
   }
